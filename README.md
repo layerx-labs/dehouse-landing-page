@@ -43,6 +43,3 @@ To get any additional information about this initiative please send us and email
 
 1,500,000 BEPRO for the best deliberable.
 
-
-All the contributions and feedback is more than welcome 🙏.
-
