@@ -39,10 +39,10 @@ To get any additional information about this initiative please send us and email
 - Intructions how to build and run the website
 - Documentation about any third party tools used to deliver the project.
 
-
-All the contributions and feedback is more than welcome 🙏.
-
 ## Reward 🤑
 
 1,500,000 BEPRO for the best deliberable.
+
+
+All the contributions and feedback is more than welcome 🙏.
 
