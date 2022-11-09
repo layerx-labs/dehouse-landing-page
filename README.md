@@ -1,4 +1,4 @@
-# DeHouse Landing Webite
+# DeHouse Landing Webite ☀
 
 ​DeHouse is a joint venture between [WorkIn](https://www.workin.pro/) and [TAIKAI](https://taikai.network) to create the first web3 hub in Portugal 🇵🇹
 Our dream is for it to become the physical intersection of the local web3 community 🤝
