@@ -37,7 +37,6 @@ To get any additional information about this initiative please send us and email
 
 - A static website built in node.js, next.js, react, angular, Framer, webflow.
 - Intructions how to build and run the website
-- 
 - Documentation about any third party tools used to deliver the project.
 
 
@@ -45,5 +44,5 @@ All the contributions and feedback is more than welcome 🙏.
 
 ## Reward 🤑
 
-XX BEPRO for the best deliberable.
+1,500,000 BEPRO for the best deliberable.
 
