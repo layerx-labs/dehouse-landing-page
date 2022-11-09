@@ -11,6 +11,16 @@ TAIKAI as of the partners of the main partner is calling all the community to co
 
 As a starting point we are providing information, logos and office photos that can be used to enrich and enhance the website appearance. 
 
+## Website Layoyt Required:
+
+* Heroe (Project Presentation)
+* Services provided
+* Pricing talking about Packs 
+* Contact Section and Cowork Address, etc
+* Footer with Important Links(Social website)
+
+All the typography should use Space Grotesk Font available on Taikai PressKit.
+
 The [DeHouse Landing Page Bounty](link) is taking place on [Bepro Network](https://app.bepro.network) and the best website will receive a reward of X BEPROs. 
 
 ## Resources 
@@ -25,8 +35,9 @@ To get any additional information about this initiative please send us and email
 
 ## Deliverables
 
-- A static website built in node.js, next.js, react, angular or webflow.
+- A static website built in node.js, next.js, react, angular, Framer, webflow.
 - Intructions how to build and run the website
+- 
 - Documentation about any third party tools used to deliver the project.
 
 
