@@ -6,7 +6,7 @@ Our dream is for it to become the physical intersection of the local web3 commun
 
 An informal and dynamic space, exclusively dedicated to the ecosystem of Web3 organizations. The objective is to create a great vibe and flexible environment, with a decentralized workspace to enhance a positive work culture. A space with a strong sense of community, where everything can be co-developed, co-created, and co-shared. The place where we can meet people with the same interests, generate and discuss new ideas, creating synergies. Gather the right tools to ensure greater productivity in our work, an efficient network, and the perfect work/life balance
 
-TAIKAI as of the partners of the main partner is calling allcommunity to contribute to this project and propose a landing page that serve as the main homepage for this community based initiative.
+TAIKAI as of the partners of the main partner is calling all the community to contribute to this project and propose a landing page that serve as the main homepage for this community based initiative.
 
 As a starting point we are providing information, logos and office photos that can be used to enrich and enhance the website appearance. 
 
