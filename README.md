@@ -8,7 +8,7 @@ An informal and dynamic space, exclusively dedicated to the ecosystem of Web3 or
 
 TAIKAI as of the partners of the main partner is calling allcommunity to contribute to this project and propose a landing page that serve as the main homepage for this community based initiative.
 
-As a starting point we are providing information, logos and office photos that can be used to enrich the website.
+As a starting point we are providing information, logos and office photos that can be used to enrich and enhance the website appearance. 
 
 The [DeHouse Landing Page Bounty](link) is taking place on [Bepro Network](https://app.bepro.network) and the best website will receive a reward of X BEPROs. 
 
@@ -26,3 +26,6 @@ To get any additional information about this initiative please send us and email
 - A static website built in node.js, next.js, react, angular or webflow.
 - Intructions how to build and run the website
 - Documentation about any third party tools used to deliver the project.
+
+
+All the contributions and feedback is more than welcome 🙏.
