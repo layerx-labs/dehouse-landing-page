@@ -23,11 +23,6 @@ All the typography should use Space Grotesk Font available on Taikai PressKit.
 
 The [DeHouse Landing Page Bounty](link) is taking place on [Bepro Network](https://app.bepro.network) 
 
-## Reward 🤑
-
-XX BEPRO for the best deliberable.
-
-
 ## Resources 
 
 * [Building DeHouse: New Web3 Hub in Portugal](https://taikai.network/en/blog/taikai-workin-dehouse)
@@ -47,3 +42,8 @@ To get any additional information about this initiative please send us and email
 
 
 All the contributions and feedback is more than welcome 🙏.
+
+## Reward 🤑
+
+XX BEPRO for the best deliberable.
+
