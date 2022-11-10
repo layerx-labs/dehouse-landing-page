@@ -41,5 +41,5 @@ To get any additional information about this initiative please send us and email
 
 ## Reward 🤑
 
-1,500,000 BEPRO for the best deliberable.
+1,500,000 BEPRO for the best Landing Page 
 
