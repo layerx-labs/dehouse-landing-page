@@ -28,8 +28,8 @@ The [DeHouse Landing Page Bounty](link) is taking place on [Bepro Network](https
 * [Building DeHouse: New Web3 Hub in Portugal](https://taikai.network/en/blog/taikai-workin-dehouse)
 * [Workin DeHouse](https://www.workin.pro/general-6)
 * [TAIKAI Presskit](https://taikai.notion.site/TAIKAI-Press-Kit-6d924818103840f4aac75618548c4505)
-* [Logos]()
-* [Photo Box]()
+* [Logos WorkIn](https://storage.googleapis.com/taikai-static/dehouse/LogosWorkIn.zip)
+* [Photo Box](https://storage.googleapis.com/taikai-static/dehouse/dehouse_photobox.zip)
 
 To get any additional information about this initiative please send us and email to hello@taikai.network
 
