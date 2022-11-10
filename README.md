@@ -1,3 +1,5 @@
+![dehouse-landing-og](https://user-images.githubusercontent.com/2805206/201096266-5f8af39e-a19e-4d8f-966a-a66c730e6cc4.png)
+
 # DeHouse Landing Website ☀
 
 ​DeHouse is a joint venture between [Work-In](https://www.workin.pro) and [TAIKAI](https://taikai.network) to create the first web3 hub in Portugal. 🇵🇹
