@@ -1,4 +1,4 @@
-![dehouse-landing-og](https://user-images.githubusercontent.com/2805206/201096266-5f8af39e-a19e-4d8f-966a-a66c730e6cc4.png)
+![dehouse-landing-og](https://user-images.githubusercontent.com/2805206/201951163-faedf7e0-e4aa-4a5c-a35e-d62bf1982921.png)
 
 # DeHouse Landing Website ☀
 
