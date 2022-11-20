@@ -1,9 +1,15 @@
+// import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+// import Footer from "./components/Footer";
+
 export default function Home() {
   return (
     <>
-      <nav>nav</nav>
-      <main>main content</main>
-      <footer>footer</footer>
+      {/* <Nav /> */}
+      <main>
+        <Hero />
+      </main>
+      {/* <Footer /> */}
     </>
   );
 }
