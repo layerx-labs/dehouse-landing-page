@@ -40,6 +40,15 @@ h1, h2 {
   line-height: 1.2;
 }
 
+button {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  white-space: nowrap;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
 .sr-only {
   position: absolute !important;
   margin: 0;
