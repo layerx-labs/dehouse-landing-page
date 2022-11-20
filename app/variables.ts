@@ -9,7 +9,7 @@ export const colors = {
 }
 
 export const global = {
-  backgroundColor: "black",
+  backgroundColor: colors.black,
   hoverTransitionDuration: "0.3s",
   defaultMargin: rem("20px"),
 };
@@ -25,12 +25,12 @@ export const device = {
 };
 
 export const layout = {
-  contentMaxWidth: rem("1000px"),
+  contentMaxWidth: rem("1040px"),
   sidePadding: rem("20px"),
 };
 
 export const typography = {
-  fontFamily: "'Inter', Verdana, Arial, Helvetica, sans-serif",
+  fontFamily: "'Space Grotesk', Verdana, Arial, Helvetica, sans-serif",
   fontWeigthThin: 100,
   fontWeigthExtraLight: 200,
   fontWeigthLight: 300,
