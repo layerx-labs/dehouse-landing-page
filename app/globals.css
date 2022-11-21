@@ -4,6 +4,11 @@
   font-display: swap;
 }
 
+:root {
+  --background-color: #000000;
+  --text-primary: #ffffff;
+}
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -17,17 +22,14 @@ html {
 
 body {
   margin: 0;
-  background-color: #000000;
+  background-color: var(--background-color);
   font-family: "Space Grotesk", Verdana, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   font-feature-settings: 'ss04' on;
-  color: #ffffff;
+  color: var(--text-primary);
   overflow-x: hidden;
-}
-
-main {
-  padding: 0 1.25rem; /* 20px */
+  transition-duration: 0.3s;
 }
 
 h1, h2 {
