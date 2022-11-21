@@ -1,0 +1,120 @@
+@use "partials/mixins" as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$breakpoints: (
+  sm: var(--breakpoints-sm),
+  md: var(--breakpoints-md),
+  lg: var(--breakpoints-lg),
+);
+
+@layer base {
+  html {
+    min-width: 375px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    font-family: var(--font-space);
+    scroll-behavior: smooth;
+    transition: all 0.5s ease;
+  }
+
+  body {
+    background-color: var(--colors-c1);
+  }
+
+  main {
+    min-height: 100vh;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  b,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .light-hoverable {
+    @include hoverable(var(--colors-c2), var(--colors-c2-l));
+  }
+  .dark .light-hoverable {
+    @include hoverable(var(--colors-c3), var(--colors-c3-l));
+  }
+}
+
+@layer components {
+  .lightable {
+    @include backlight(var(--colors-c2-l));
+  }
+  .dark .lightable {
+    @include backlight(var(--colors-c3-l));
+  }
+}
+
+@layer components {
+  .expandable {
+    @include grow-item;
+  }
+}
+
+@layer components {
+  .awssld {
+    border-radius: 0.5rem;
+    --slider-height-percentage: 65% !important;
+    --slider-transition-duration: 600ms !important;
+    --organic-arrow-thickness: 0 !important;
+    --organic-arrow-border-radius: 0 !important;
+    --organic-arrow-height: 0 !important;
+    --organic-arrow-color: transparent !important;
+    --control-button-width: 0 !important;
+    --control-button-height: 0 !important;
+    --control-button-background: transparent !important;
+    --control-bullet-color: transparent !important;
+    --control-bullet-active-color: transparent !important;
+    --loader-bar-color: var(--colors-c2-l) !important;
+    --loader-bar-height: 6px !important;
+  }
+}
+
+@layer components {
+  .social-icon {
+    margin: 0.5rem;
+    width: auto;
+    height: 1.25rem;
+    fill: var(--colors-c2-l);
+    transition-duration: 0.3s;
+  }
+}
