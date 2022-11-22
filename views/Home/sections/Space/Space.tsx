@@ -4,6 +4,7 @@ import {
   SpaceInner,
   SpaceSubtitle,
   SpaceDescription,
+  SpaceDescriptionInit,
 } from "./Space.styles";
 import { ImageSlider } from "./ImageSlider";
 
@@ -16,23 +17,24 @@ const Space = () => (
       <SpaceDescription>
         <ul>
           <li>
-            <b>2100m2</b> divided by 4 places and placed between Foz do Douro
-            and Matosinhos, the Edifício Transparente embraces the seafront of
-            Porto and Matosinhos, appearing at the confluence of Avenida Brasil,
-            in Foz, with the West entrance of Parque da Cidade. The privileged
-            location, views of the sea, and wide range of services make this
-            space one of the best to work.
+            <SpaceDescriptionInit>2100m2</SpaceDescriptionInit> divided by 4
+            places and placed between Foz do Douro and Matosinhos, the Edifício
+            Transparente embraces the seafront of Porto and Matosinhos,
+            appearing at the confluence of Avenida Brasil, in Foz, with the West
+            entrance of Parque da Cidade. The privileged location, views of the
+            sea, and wide range of services make this space one of the best to
+            work.
           </li>
         </ul>
         <br />
-        <b>Talks</b>
+        <SpaceDescriptionInit>Talks</SpaceDescriptionInit>
         <ul>
           <li>
             Workshops and discussions to inspire Work-In members and partners.
           </li>
         </ul>
         <br />
-        <b>Wellness activities</b>
+        <SpaceDescriptionInit>Wellness activities</SpaceDescriptionInit>
         <ul>
           <li>
             Whether it’s yoga, surfing or running, nothing makes the brain work
@@ -40,7 +42,7 @@ const Space = () => (
           </li>
         </ul>
         <br />
-        <b>Social Time</b>
+        <SpaceDescriptionInit>Social Time</SpaceDescriptionInit>
         <ul>
           <li>
             It’s important to have a balance between work and personal life.
@@ -49,7 +51,7 @@ const Space = () => (
           </li>
         </ul>
         <br />
-        <b>Parking lot</b>
+        <SpaceDescriptionInit>Parking lot</SpaceDescriptionInit>
         <ul>
           <li>25€ p/month for Work-In members</li>
           <li>3 minutes walking distance</li>
@@ -57,7 +59,7 @@ const Space = () => (
           <li>Open 24 hours</li>
         </ul>
         <br />
-        <b>Discounts</b>
+        <SpaceDescriptionInit>Discounts</SpaceDescriptionInit>
         <ul>
           <li>every day 10% off At Edifício Transparente restaurants</li>
         </ul>

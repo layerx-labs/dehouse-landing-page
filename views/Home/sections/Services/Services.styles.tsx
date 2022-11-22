@@ -18,6 +18,6 @@ const ServicesWrapperStyled = styled(BackgroundWrapper)`
 
 const ServicesWrapper = tw(
   ServicesWrapperStyled
-)`services flex flex-col p-[5%] bg-c1 flex items-center justify-between`;
+)`services flex flex-col bg-c1 flex items-center justify-between`;
 
 export { ServicesSubtitle, ServicesWrapper, ServicesInner, ServicesTitle };

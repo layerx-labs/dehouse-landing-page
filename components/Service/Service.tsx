@@ -17,15 +17,15 @@ export interface ServiceProps {
 const Service = ({ icon, label, description }: ServiceProps) => (
   <ServiceWrapper>
     <ServiceContent>
-      <FontAwesomeIcon
-        icon={icon}
-        className="text-c2"
-        style={{ fontSize: 50, marginBottom: "1rem" }}
-      />
-      <div>
-        <ServiceLabel>{label}</ServiceLabel>
-        <ServiceDescription>{description}</ServiceDescription>
-      </div>
+      <ServiceIcon>
+        <FontAwesomeIcon
+          icon={icon}
+          className="text-c2"
+          style={{ fontSize: 50 }}
+        />
+      </ServiceIcon>
+      <ServiceLabel>{label}</ServiceLabel>
+      <ServiceDescription>{description}</ServiceDescription>
     </ServiceContent>
   </ServiceWrapper>
 );

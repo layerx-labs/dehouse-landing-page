@@ -979,12 +979,8 @@ svg {
   height: 0.25rem !important;
 }
 
-.max-h-40{
-  max-height: 10rem !important;
-}
-
-.min-h-\[8rem\]{
-  min-height: 8rem !important;
+.min-h-\[4rem\]{
+  min-height: 4rem !important;
 }
 
 .min-h-full{
@@ -1951,16 +1947,16 @@ svg {
   border-style: none !important;
 }
 
-.bg-c3{
-  background-color: var(--colors-c3) !important;
+.bg-c2{
+  background-color: var(--colors-c2) !important;
 }
 
 .bg-c2-l{
   background-color: var(--colors-c2-l) !important;
 }
 
-.bg-c2{
-  background-color: var(--colors-c2) !important;
+.bg-c3{
+  background-color: var(--colors-c3) !important;
 }
 
 .bg-c1-l{
@@ -3119,6 +3115,18 @@ $breakpoints: (
 
   .dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
     paint-order: markers;
+  }
+}
+
+@media (max-width: 400px){
+
+  .sm-max\:m-2{
+    margin: 0.5rem !important;
+  }
+
+  .sm-max\:text-xs{
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
   }
 }
 
