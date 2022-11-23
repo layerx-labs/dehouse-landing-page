@@ -1,4 +1,4 @@
-import Taikai from "../../components/Assets/svg/Taikai";
+import Taikai from "../../components/Backgrounds/Taikai";
 import { Link } from "../../components/Typography";
 import {
   FooterContainer,

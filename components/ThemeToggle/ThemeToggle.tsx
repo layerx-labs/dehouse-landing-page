@@ -25,9 +25,8 @@ const ThemeToggle = () => {
     return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
-  const toggleTheme = () => {
+  const toggleTheme = () =>
     setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK);
-  };
 
   return (
     <ThemeToggleComponent tabIndex={0} title="theme switcher" id="theme-switch">

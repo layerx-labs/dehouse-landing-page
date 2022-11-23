@@ -61,7 +61,7 @@ const Space = () => (
         <br />
         <SpaceDescriptionInit>Discounts</SpaceDescriptionInit>
         <ul>
-          <li>every day 10% off At Edifício Transparente restaurants</li>
+          <li>Every day 10% off At Edifício Transparente restaurants</li>
         </ul>
       </SpaceDescription>
     </SpaceInner>

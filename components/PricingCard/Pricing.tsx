@@ -1,3 +1,4 @@
+import { useDarkTheme } from "../../hooks/useDarkTheme";
 import {
   PricingBadge,
   PricingContent,

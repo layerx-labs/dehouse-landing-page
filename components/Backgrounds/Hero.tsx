@@ -1,4 +1,4 @@
-import heroBackground from "./hero.svg";
+import heroBackground from "../../svg/hero.svg";
 import React from "react";
 const Hero = () => (
   <img

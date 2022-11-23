@@ -1,4 +1,4 @@
-import HeroBackground from "../../../../components/Assets/svg/Hero";
+import HeroBackground from "../../../../components/Backgrounds/Hero";
 import { HeroBadge, HeroWrapper } from "./Hero.styles";
 
 const Hero = () => (

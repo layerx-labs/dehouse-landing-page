@@ -1,6 +1,6 @@
-import AboutBackground from "../../../../components/Assets/svg/About";
-import Taikai from "../../../../components/Assets/svg/Taikai";
-import Workin from "../../../../components/Assets/svg/Workin";
+import AboutBackground from "../../../../components/Backgrounds/About";
+import Taikai from "../../../../components/Backgrounds/Taikai";
+import Workin from "../../../../components/Backgrounds/Workin";
 import {
   AboutWrapper,
   AboutInner,
