@@ -11,7 +11,7 @@ const ServicesInner = tw.div`services-inner min-w-full flex flex-wrap align-cent
 const ServicesWrapperStyled = styled(BackgroundWrapper)`
   background: linear-gradient(
     0deg,
-    var(--colors-c2) 50%,
+    var(--colors-background) 50%,
     var(--colors-c2-l) 100%
   );
 `;

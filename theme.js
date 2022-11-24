@@ -8,7 +8,7 @@ const colors = {
   black: "#333333",
   blue: "#4250e4",
   purple: "#4329a6",
-  ivory: "#f2f1e8",
+  ivory: "#f7f7f1",
   orange: "#ff6a2c",
 };
 
@@ -16,7 +16,7 @@ const lighten = {
   blackL: "#6c7278",
   blueL: "#8e96ef",
   purpleL: "#846ddb",
-  ivoryL: "#f7f7f1",
+  ivoryL: "#f2e1e8",
   orangeL: "#ffa680",
 };
 
@@ -58,4 +58,4 @@ const lightLighten = {
 const dark = { ...darkBase, ...darkLighten };
 const light = { ...lightBase, ...lightLighten };
 
-module.exports = { dark, light, breakpoints };
+module.exports = { dark, light, breakpoints, themeColors: colors };

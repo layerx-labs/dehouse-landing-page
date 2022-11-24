@@ -13,14 +13,14 @@ const PricingInner = tw.div`pricing-inner min-w-full flex flex-wrap align-center
 const PricingWrapperStyled = styled(BackgroundWrapper)`
   background: linear-gradient(
     180deg,
-    var(--colors-c2) 50%,
+    var(--colors-background) 50%,
     var(--colors-c2-l) 100%
   );
 `;
 
 const PricingWrapper = tw(
   PricingWrapperStyled
-)`pricing flex flex-col p-[5%] bg-c1 flex items-center justify-between`;
+)`pricing flex flex-col p-[5%] py-2 bg-c1 flex items-center justify-between`;
 
 export {
   PricingTitle,

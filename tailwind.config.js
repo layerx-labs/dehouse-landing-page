@@ -1,6 +1,6 @@
 const colors = require("tailwindcss/colors");
 const { fontFamily } = require("tailwindcss/defaultTheme");
-const { breakpoints, light, dark } = require("./theme");
+const { breakpoints, light, dark, themeColors } = require("./theme");
 
 delete colors["lightBlue"];
 delete colors["warmGray"];
@@ -38,16 +38,17 @@ module.exports = {
         "c3-l": "var(--colors-c3-l)",
         "c4-l": "var(--colors-c4-l)",
         "c5-l": "var(--colors-c5-l)",
+        background: "var(--colors-bg)",
       },
       variables: {
         DEFAULT: {
-          colors: light,
+          colors: { ...light, background: themeColors.ivory },
           breakpoints,
         },
       },
       darkVariables: {
         DEFAULT: {
-          colors: dark,
+          colors: { ...dark, background: themeColors.black },
         },
       },
     },

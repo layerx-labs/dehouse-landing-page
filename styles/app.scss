@@ -382,16 +382,17 @@ video {
 }
 
 :root{
-  --colors-c1: #f2f1e8;
+  --colors-c1: #f7f7f1;
   --colors-c2: #ff6a2c;
   --colors-c3: #4250e4;
   --colors-c4: #333333;
   --colors-c5: #4329a6;
-  --colors-c1-l: #f7f7f1;
+  --colors-c1-l: #f2e1e8;
   --colors-c2-l: #ffa680;
   --colors-c3-l: #8e96ef;
   --colors-c4-l: #6c7278;
   --colors-c5-l: #846ddb;
+  --colors-background: #f7f7f1;
   --breakpoints-sm: 400px;
   --breakpoints-m: 767px;
   --breakpoints-lg: 1024px;
@@ -401,13 +402,14 @@ video {
   --colors-c1: #333333;
   --colors-c2: #4250e4;
   --colors-c3: #4329a6;
-  --colors-c4: #f2f1e8;
+  --colors-c4: #f7f7f1;
   --colors-c5: #ff6a2c;
   --colors-c1-l: #6c7278;
   --colors-c2-l: #8e96ef;
   --colors-c3-l: #846ddb;
-  --colors-c4-l: #f7f7f1;
+  --colors-c4-l: #f2e1e8;
   --colors-c5-l: #ffa680;
+  --colors-background: #333333;
 }
 
 html {
@@ -748,6 +750,14 @@ svg {
   left: -0.25rem !important;
 }
 
+.top-0{
+  top: 0px !important;
+}
+
+.left-0{
+  left: 0px !important;
+}
+
 .isolate{
   isolation: isolate !important;
 }
@@ -831,20 +841,16 @@ svg {
   margin-bottom: 1rem !important;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem !important;
+.mb-8{
+  margin-bottom: 2rem !important;
 }
 
-.mt-10{
-  margin-top: 2.5rem !important;
+.mt-8{
+  margin-top: 2rem !important;
 }
 
 .mt-2{
   margin-top: 0.5rem !important;
-}
-
-.mb-8{
-  margin-bottom: 2rem !important;
 }
 
 .box-border{
@@ -1967,10 +1973,6 @@ svg {
   background-color: var(--colors-c1-l) !important;
 }
 
-.bg-transparent{
-  background-color: transparent !important;
-}
-
 .bg-c1{
   background-color: var(--colors-c1) !important;
 }
@@ -2427,8 +2429,8 @@ svg {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.text-c1-l{
-  color: var(--colors-c1-l) !important;
+.text-c4-l{
+  color: var(--colors-c4-l) !important;
 }
 
 .text-indigo-400{
@@ -2483,6 +2485,10 @@ svg {
 .text-blue-500{
   --tw-text-opacity: 1 !important;
   color: rgb(59 130 246 / var(--tw-text-opacity)) !important;
+}
+
+.text-c1-l{
+  color: var(--colors-c1-l) !important;
 }
 
 .text-opacity-50{
@@ -3025,12 +3031,12 @@ $breakpoints: (
   color: var(--colors-c2-l) !important;
 }
 
-.dark .dark\:text-c4-l{
-  color: var(--colors-c4-l) !important;
-}
-
 .dark .dark\:text-c3-l{
   color: var(--colors-c3-l) !important;
+}
+
+.dark .dark\:text-c4-l{
+  color: var(--colors-c4-l) !important;
 }
 
 .dark .dark\:after\:border-c2::after{
