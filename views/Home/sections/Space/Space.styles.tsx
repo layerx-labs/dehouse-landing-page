@@ -7,7 +7,7 @@ const SpaceSubtitle = tw(SubTitle)`space-subtitle font-light`;
 
 const SpaceDescription = tw.div`space-description text-c1-l dark:text-c4-l p-[5%] max-w-[65rem] text-justify leading-tight`;
 
-const SpaceDescriptionInit = tw.b`text-c4 font-bold dark:text-c2-l`;
+const SpaceDescriptionInit = tw.b`text-c4 text-2xl font-bold dark:text-c2-l`;
 
 const SpaceInner = tw.div`space-inner min-w-full flex flex-wrap align-center items-center justify-center`;
 

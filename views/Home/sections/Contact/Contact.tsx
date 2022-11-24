@@ -1,5 +1,5 @@
 import { Button } from "../../../../components/Button";
-import { ContactTitle, ContactWrapper } from "./Contact.styles";
+import { ContactInner, ContactTitle, ContactWrapper } from "./Contact.styles";
 
 const Contact = () => (
   <ContactWrapper height={30}>
@@ -9,6 +9,12 @@ const Contact = () => (
         Get in touch!
       </a>
     </Button>
+    <ContactInner>
+      <br />
+      <span>or find us at</span>
+      <br />
+      <address> Via do Castelo do Queijo, 395 4100-429 Porto</address>
+    </ContactInner>
   </ContactWrapper>
 );
 

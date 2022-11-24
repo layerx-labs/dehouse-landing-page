@@ -792,12 +792,12 @@ svg {
   margin: 1rem !important;
 }
 
-.m-1{
-  margin: 0.25rem !important;
-}
-
 .m-2{
   margin: 0.5rem !important;
+}
+
+.m-1{
+  margin: 0.25rem !important;
 }
 
 .mx-1{
@@ -833,6 +833,10 @@ svg {
 
 .mb-10{
   margin-bottom: 2.5rem !important;
+}
+
+.mt-10{
+  margin-top: 2.5rem !important;
 }
 
 .mt-2{
@@ -2171,8 +2175,8 @@ svg {
   padding: 5% !important;
 }
 
-.p-3{
-  padding: 0.75rem !important;
+.p-\[1\.5rem\]{
+  padding: 1.5rem !important;
 }
 
 .px-6{
@@ -3025,6 +3029,10 @@ $breakpoints: (
   color: var(--colors-c4-l) !important;
 }
 
+.dark .dark\:text-c3-l{
+  color: var(--colors-c3-l) !important;
+}
+
 .dark .dark\:after\:border-c2::after{
   content: var(--tw-content) !important;
   border-color: var(--colors-c2) !important;
@@ -3139,6 +3147,11 @@ $breakpoints: (
   .md-max\:text-sm{
     font-size: 0.875rem !important;
     line-height: 1.25rem !important;
+  }
+
+  .md-max\:text-2xl{
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
   }
 
   .md-max\:text-5xl{

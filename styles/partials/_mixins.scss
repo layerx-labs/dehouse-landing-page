@@ -12,8 +12,7 @@ $breakpoint: map-get($breakpoints, sm);
   background-color: $base;
   @include backlight($hover);
   cursor: pointer;
-  &:hover,
-  :focus {
+  &:hover {
     background-color: $hover;
     @include grow-item;
     @include backlight($base);
