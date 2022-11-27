@@ -3,7 +3,7 @@ import { rem } from "polished";
 export const colors = {
   white: "#ffffff",
   black: "#000000",
-  grey: "#17171C",
+  grey: "#23232A",
   yellow: "#FFFE55",
   orange: "#FEAF00",
   pink: "#D92FB4"
