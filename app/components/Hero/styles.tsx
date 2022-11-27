@@ -18,8 +18,6 @@ export const Wrapper = styled.div`
   h1 {
     margin-top: ${rem("-55px")};
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: ${rem("6.5px")};
   }
 
   p {
