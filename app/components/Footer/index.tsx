@@ -17,12 +17,15 @@ export default function Footer() {
         <span>© Work-In Porto, 2021</span>
         <ul>
           <li>
-            <Link href="#0" target="_blank">
+            <Link
+              href="https://linkedin.com/company/work-in-porto"
+              target="_blank"
+            >
               <Icon icon="linkedin" />
             </Link>
           </li>
           <li>
-            <Link href="#0" target="_blank">
+            <Link href="https://instagram.com/workin.caos" target="_blank">
               <Icon icon="instagram" />
             </Link>
           </li>
