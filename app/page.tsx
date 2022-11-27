@@ -3,6 +3,7 @@ import Gallery from "./components/Gallery";
 import SectionPattern from "./components/SectionPattern";
 import Services from "./components/Services";
 import Packs from "./components/Packs";
+import Benefits from "./components/Benefits";
 // import Footer from "./components/Footer";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <SectionPattern>
           <Services />
           <Packs />
+          <Benefits />
         </SectionPattern>
       </main>
       {/* <Footer /> */}
