@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  width: 100vw;
   background-color: var(--background-color);
   font-family: "Space Grotesk", Verdana, Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -40,6 +41,16 @@ h1, h2 {
 h1, h2 {
   font-size: 2.875rem; /* 46px */
   line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 button {

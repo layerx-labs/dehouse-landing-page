@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import Gallery from "./components/Gallery";
 // import Footer from "./components/Footer";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <main>
         <Hero />
+        <Gallery />
       </main>
       {/* <Footer /> */}
     </>
