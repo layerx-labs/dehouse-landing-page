@@ -4,18 +4,18 @@ import * as Styles from "./styles";
 import Image from "next/image";
 import Pin from "../../../utils/pin";
 import map from "/public/map.jpg";
+import Link from "next/link";
 
 export default function Contacts() {
   return (
     <Styles.Wrapper>
       <h2>Join DeHouse today</h2>
-      <button
-        onClick={() => {
-          console.log("click!");
-        }}
+      <Link
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeCef-PSnHMZmJrXL2XEnspo4dYqQl-7--QsyhZ201dilvlJw/viewform"
+        target="_blank"
       >
-        <span>Reach out to us</span>
-      </button>
+        Reach out to us
+      </Link>
       <address>
         <ul>
           <li>
@@ -27,13 +27,15 @@ export default function Contacts() {
         </ul>
       </address>
       <Styles.Map className="map">
-        <Pin />
-        <Image
-          src={map}
-          alt="DeHouse location"
-          placeholder="blur"
-          quality={100}
-        />
+        <Link href="https://goo.gl/maps/JM5G4A9ythbBDbyB8" target="_blank">
+          <Pin />
+          <Image
+            src={map}
+            alt="DeHouse location"
+            placeholder="blur"
+            quality={100}
+          />
+        </Link>
       </Styles.Map>
     </Styles.Wrapper>
   );
