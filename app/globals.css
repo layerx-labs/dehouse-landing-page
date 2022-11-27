@@ -48,6 +48,7 @@ h1, h2 {
 h3 {
   font-size: 1.25rem; /* 20px */
   font-weight: 400;
+  letter-spacing: 0.125rem; /* 2px */
 }
 
 p {

@@ -1,7 +1,7 @@
 "use client";
 
-import { rem } from "polished";
 import styled from "styled-components";
+import { rem } from "polished";
 import { layout } from "../../variables";
 
 export const Wrapper = styled.div`
@@ -25,7 +25,6 @@ export const Wrapper = styled.div`
         position: relative;
         margin-bottom: ${rem("20px")};
         padding-left: var(--width);
-        letter-spacing: ${rem("2px")};
 
         &:before {
           position: absolute;
