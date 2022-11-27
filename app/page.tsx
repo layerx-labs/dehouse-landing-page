@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import Packs from "./components/Packs";
 import Benefits from "./components/Benefits";
 import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         </SectionPattern>
         <Contacts />
       </main>
+      <Footer />
     </>
   );
 }
