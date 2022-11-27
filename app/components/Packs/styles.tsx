@@ -45,6 +45,10 @@ export const Pack = styled.div`
     font-size: ${rem("20px")};
     text-transform: uppercase;
     letter-spacing: ${rem("2px")};
+
+    li:not(:last-child) {
+      margin-bottom: ${rem("4px")};
+    }
   }
 
   span {

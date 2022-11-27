@@ -34,7 +34,7 @@ export default function Services() {
       <ul>
         {services.map((service, index) => (
           <li key={index}>
-            <h3>{service.title}</h3>
+            <h4>{service.title}</h4>
             <span>{service.description}</span>
           </li>
         ))}

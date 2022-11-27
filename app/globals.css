@@ -35,17 +35,22 @@ body {
 
 h1, h2, h3 {
   margin: 0;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 h1, h2 {
   font-size: 2.875rem; /* 46px */
-  font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.4rem; /* 6.4px */
 }
 
 h3 {
+  font-size: 1.875rem; /* 30px */
+  letter-spacing: 0.125rem; /* 2px */
+}
+
+h4 {
   font-size: 1.25rem; /* 20px */
   font-weight: 400;
   letter-spacing: 0.125rem; /* 2px */
@@ -53,6 +58,7 @@ h3 {
 
 p {
   margin: 0;
+  line-height: 1.5;
 }
 
 ul {

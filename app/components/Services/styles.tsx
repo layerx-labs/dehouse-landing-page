@@ -19,12 +19,13 @@ export const Wrapper = styled.div`
     grid-gap: ${rem("35px")};
 
     li {
-      h3 {
+      h4 {
         --width: ${rem("26px")};
 
         position: relative;
         margin-bottom: ${rem("20px")};
         padding-left: var(--width);
+        text-transform: uppercase;
 
         &:before {
           position: absolute;
@@ -33,6 +34,10 @@ export const Wrapper = styled.div`
           width: var(--width);
           content: "//";
         }
+      }
+
+      span {
+        line-height: 1.5;
       }
     }
   }
