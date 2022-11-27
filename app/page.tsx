@@ -4,7 +4,7 @@ import SectionPattern from "./components/SectionPattern";
 import Services from "./components/Services";
 import Packs from "./components/Packs";
 import Benefits from "./components/Benefits";
-// import Footer from "./components/Footer";
+import Contacts from "./components/Contacts";
 
 export default function Home() {
   return (
@@ -17,8 +17,8 @@ export default function Home() {
           <Packs />
           <Benefits />
         </SectionPattern>
+        <Contacts />
       </main>
-      {/* <Footer /> */}
     </>
   );
 }
