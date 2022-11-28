@@ -40,7 +40,7 @@ h1, h2, h3 {
 }
 
 h1, h2 {
-  font-size: 2.875rem; /* 46px */
+  font-size: 2.25rem; /* 36px */
   line-height: 1.2;
   letter-spacing: 0.4rem; /* 6.4px */
 }
@@ -86,6 +86,14 @@ button {
   white-space: nowrap;
   overflow: hidden;
   clip: rect(0 0 0 0);
+}
+
+@media (min-width: 700px) {
+  h1, h2 {
+    font-size: 2.875rem; /* 46px */
+    line-height: 1.2;
+    letter-spacing: 0.4rem; /* 6.4px */
+  }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

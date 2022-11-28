@@ -2,11 +2,12 @@
 
 import styled from "styled-components";
 import { rem } from "polished";
-import { layout, colors, global } from "../../variables";
+import { layout, colors, global, device } from "../../variables";
 
 export const Wrapper = styled.div`
   margin: 0 auto;
   max-width: ${layout.contentMaxWidth};
+  padding: 0 ${layout.sidePadding};
   text-align: center;
   text-transform: uppercase;
 
@@ -20,11 +21,11 @@ export const Wrapper = styled.div`
       ${colors.yellow} 0%,
       ${colors.pink} 100%
     );
-    padding: 0 ${rem("50px")};
+    padding: ${rem("10px")} ${rem("20px")};
     font-weight: 600;
-    font-size: ${rem("46px")};
+    font-size: ${rem("20px")};
     color: ${colors.black};
-    letter-spacing: ${rem("6.4px")};
+    letter-spacing: ${rem("2px")};
     text-transform: uppercase;
     text-decoration: none;
     transition-duration: ${global.hoverTransitionDuration};
@@ -35,7 +36,7 @@ export const Wrapper = styled.div`
   }
 
   address {
-    margin: ${rem("150px")} 0 ${rem("30px")} 0;
+    margin: ${rem("80px")} 0 ${rem("30px")} 0;
     font-size: ${rem("20px")};
     font-style: normal;
 
@@ -43,6 +44,18 @@ export const Wrapper = styled.div`
       li:not(:last-child) {
         margin-bottom: ${rem("5px")};
       }
+    }
+  }
+
+  @media ${device.s} {
+    > a {
+      padding: 0 ${rem("50px")};
+      font-size: ${rem("46px")};
+      letter-spacing: ${rem("6.4px")};
+    }
+
+    address {
+      margin: ${rem("150px")} 0 ${rem("30px")} 0;
     }
   }
 `;

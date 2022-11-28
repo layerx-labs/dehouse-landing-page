@@ -2,12 +2,13 @@
 
 import styled from "styled-components";
 import { rem } from "polished";
+import { device } from "../../variables";
 
 export const Wrapper = styled.div`
-  margin: ${rem("150px")} 0;
+  margin: ${rem("80px")} 0;
   display: grid;
   grid-auto-flow: column;
-  grid-gap: ${rem("50px")};
+  grid-gap: ${rem("20px")};
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
@@ -20,7 +21,7 @@ export const Wrapper = styled.div`
   &:before,
   &:after {
     content: "";
-    width: ${rem("15px")};
+    width: ${rem("20px")};
   }
 
   div {
@@ -33,15 +34,53 @@ export const Wrapper = styled.div`
 
       &.circle {
         border-radius: 999px;
-        min-width: ${rem("300px")};
+        min-width: ${rem("200px")};
         height: 100%;
+        min-height: ${rem("200px")};
+        max-height: ${rem("200px")};
+      }
+
+      &.rectangle-h {
+        min-width: ${rem("233px")};
+        height: 100%;
+        min-height: ${rem("150px")};
+        max-height: ${rem("150px")};
+      }
+
+      &.rectangle-v {
+        border-radius: ${rem("20px")};
+        min-width: ${rem("150px")};
+        height: 100%;
+        min-height: ${rem("233px")};
+        max-height: ${rem("233px")};
+      }
+
+      &.square {
+        min-width: ${rem("150px")};
+        height: 100%;
+        min-height: ${rem("150px")};
+        max-height: ${rem("150px")};
+      }
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  @media ${device.m} {
+    margin: ${rem("150px")} 0;
+    grid-gap: ${rem("50px")};
+
+    div > div {
+      &.circle {
+        min-width: ${rem("300px")};
         min-height: ${rem("300px")};
         max-height: ${rem("300px")};
       }
 
       &.rectangle-h {
         min-width: ${rem("333px")};
-        height: 100%;
         min-height: ${rem("250px")};
         max-height: ${rem("250px")};
       }
@@ -49,20 +88,14 @@ export const Wrapper = styled.div`
       &.rectangle-v {
         border-radius: ${rem("30px")};
         min-width: ${rem("250px")};
-        height: 100%;
         min-height: ${rem("333px")};
         max-height: ${rem("333px")};
       }
 
       &.square {
         min-width: ${rem("250px")};
-        height: 100%;
         min-height: ${rem("250px")};
         max-height: ${rem("250px")};
-      }
-
-      img {
-        object-fit: cover;
       }
     }
   }

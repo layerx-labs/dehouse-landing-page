@@ -2,33 +2,53 @@
 
 import styled from "styled-components";
 import { rem } from "polished";
-import { colors, layout, typography } from "../../variables";
+import { colors, device, layout, typography } from "../../variables";
 
 export const Wrapper = styled.div`
   margin: 0 auto;
   max-width: ${layout.contentMaxWidth};
-  padding-top: ${rem("80px")};
+  padding: ${rem("40px")} ${layout.sidePadding} 0 ${layout.sidePadding};
+  text-align: center;
 
   > svg {
-    margin-left: -6.5%;
-    width: 113%;
+    width: 85%;
     height: auto;
   }
 
-  h1 {
-    margin-top: ${rem("-55px")};
-    text-align: center;
-  }
-
   p {
-    font-size: ${rem("36px")};
+    font-size: ${rem("26px")};
     letter-spacing: ${rem("1px")};
     line-height: 1.35;
+  }
+
+  @media ${device.s} {
+    h1 {
+      margin-top: -3vw;
+    }
+  }
+
+  @media ${device.m} {
+    padding-top: ${rem("80px")};
+
+    p {
+      font-size: ${rem("36px")};
+    }
+  }
+
+  @media ${device.l} {
+    > svg {
+      margin-left: -6.5%;
+      width: 113%;
+    }
+
+    h1 {
+      font-size: ${rem("45.8px")};
+    }
   }
 `;
 
 export const PoweredBy = styled.div`
-  margin: ${rem("110px")} 0;
+  margin: ${rem("50px")} 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,5 +71,9 @@ export const PoweredBy = styled.div`
       width: auto;
       height: ${rem("50px")};
     }
+  }
+
+  @media ${device.m} {
+    margin: ${rem("110px")} 0;
   }
 `;

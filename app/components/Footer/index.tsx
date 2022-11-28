@@ -13,8 +13,7 @@ export default function Footer() {
 
   return (
     <Styles.Wrapper>
-      <div>
-        <span>© Work-In Porto, 2021</span>
+      <div className="social">
         <ul>
           <li>
             <Link
@@ -30,8 +29,9 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
+        <span>© Work-In Porto, 2021</span>
       </div>
-      <div>
+      <div className="back">
         <button onClick={scrollTopTop}>
           <span>Back to top</span> <Icon icon="arrow" />
         </button>

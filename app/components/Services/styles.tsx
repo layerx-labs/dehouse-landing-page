@@ -2,21 +2,22 @@
 
 import styled from "styled-components";
 import { rem } from "polished";
-import { layout } from "../../variables";
+import { device, layout } from "../../variables";
 
 export const Wrapper = styled.div`
   margin: 0 auto;
   max-width: ${layout.contentMaxWidth};
+  text-align: center;
 
   h2 {
-    margin-bottom: ${rem("50px")};
+    margin-bottom: ${rem("25px")};
     text-align: center;
   }
 
   ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: ${rem("35px")};
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: ${rem("15px")};
 
     li {
       h4 {
@@ -24,21 +25,41 @@ export const Wrapper = styled.div`
 
         position: relative;
         margin-bottom: ${rem("20px")};
-        padding-left: var(--width);
         text-transform: uppercase;
-
-        &:before {
-          position: absolute;
-          top: ${rem("-2px")};
-          left: 0;
-          width: var(--width);
-          content: "//";
-        }
       }
 
       span {
         line-height: 1.5;
       }
+    }
+  }
+
+  @media ${device.s} {
+    text-align: left;
+
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: ${rem("35px")};
+
+      li {
+        h4 {
+          padding-left: var(--width);
+
+          &:before {
+            position: absolute;
+            top: ${rem("-2px")};
+            left: 0;
+            width: var(--width);
+            content: "//";
+          }
+        }
+      }
+    }
+  }
+
+  @media ${device.m} {
+    ul {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 `;

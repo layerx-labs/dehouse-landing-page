@@ -2,31 +2,55 @@
 
 import styled from "styled-components";
 import { rem } from "polished";
-import { colors, layout } from "../../variables";
+import { colors, device, layout } from "../../variables";
 
 export const Wrapper = styled.div`
-  margin: ${rem("150px")} auto;
+  margin: ${rem("80px")} auto;
   max-width: ${layout.contentMaxWidth};
 
   > h2 {
     margin-bottom: ${rem("50px")};
     text-align: center;
   }
+
+  @media ${device.m} {
+    margin: ${rem("150px")} auto;
+  }
 `;
 
 export const Packs = styled.div`
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: ${rem("90px")};
   z-index: 1;
+
+  @media ${device.s} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: ${rem("25px")};
+    grid-row-gap: ${rem("45px")};
+  }
+
+  @media ${device.m} {
+    grid-column-gap: ${rem("50px")};
+    padding-left: ${rem("15px")};
+  }
+
+  @media ${device.l} {
+    grid-gap: ${rem("90px")};
+    padding-left: 0;
+  }
 `;
 
 export const Pack = styled.div`
   position: relative;
+  margin-left: ${rem("20px")};
   border: ${rem("1px")} solid ${colors.white};
   background-color: var(--background-color);
-  padding: ${rem("50px")} ${rem("65px")};
+  width: calc(100% - ${rem("30px")});
+  padding: ${rem("25px")} ${rem("20px")};
+
+  &:not(:last-child) {
+    margin-bottom: ${rem("45px")};
+  }
 
   &:after {
     content: "";
@@ -54,6 +78,22 @@ export const Pack = styled.div`
   span {
     display: inline-block;
     margin-top: ${rem("30px")};
+  }
+
+  @media ${device.s} {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media ${device.m} {
+    margin-left: 0;
+    width: inherit;
+    height: inherit;
+  }
+
+  @media ${device.l} {
+    padding: ${rem("50px")} ${rem("65px")};
   }
 `;
 

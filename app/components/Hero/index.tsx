@@ -1,3 +1,4 @@
+import Link from "next/link";
 import DeHouseLogo from "../../../utils/dehouse-logo";
 import TaikaiLogo from "../../../utils/taikai-logo";
 import WorkInLogo from "../../../utils/workin-logo";
@@ -12,9 +13,13 @@ export default function Hero() {
         Portugal
       </h1>
       <Styles.PoweredBy>
-        <TaikaiLogo className="taikai" />
+        <Link href="#0" target="_blank">
+          <TaikaiLogo className="taikai" />
+        </Link>
         <span>x</span>
-        <WorkInLogo className="work-in" />
+        <Link href="#0" target="_blank">
+          <WorkInLogo className="work-in" />
+        </Link>
       </Styles.PoweredBy>
       <p>
         We are a space where ideas manifest, grow and build. We act as an

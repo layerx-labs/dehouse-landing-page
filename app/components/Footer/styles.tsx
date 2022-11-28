@@ -2,19 +2,33 @@
 
 import styled from "styled-components";
 import { rem } from "polished";
-import { global, colors, layout } from "../../variables";
+import { global, colors, layout, device } from "../../variables";
 
 export const Wrapper = styled.footer`
   margin: 0 auto;
-  margin: ${rem("150px")} auto ${rem("100px")} auto;
+  margin: ${rem("80px")} auto ${rem("50px")} auto;
   max-width: ${layout.contentMaxWidth};
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 ${layout.sidePadding};
+
+  div {
+    &.social {
+      order: 2;
+    }
+
+    &.back {
+      order: 1;
+      margin-bottom: ${rem("30px")};
+    }
+  }
 
   ul {
     --size: ${rem("30px")};
-    margin-top: ${rem("30px")};
+    margin-bottom: ${rem("15px")};
     display: flex;
+    justify-content: center;
 
     li {
       width: var(--size);
@@ -68,11 +82,43 @@ export const Wrapper = styled.footer`
     }
 
     svg {
-      margin-left: ${rem("20px")};
+      margin-left: ${rem("5px")};
       width: auto;
       height: ${rem("20px")};
       fill: ${colors.white};
       transition-duration: ${global.hoverTransitionDuration};
     }
+  }
+
+  @media ${device.s} {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    div {
+      &.social {
+        order: 1;
+      }
+
+      &.back {
+        order: 2;
+        margin-bottom: 0;
+      }
+    }
+
+    ul {
+      margin-bottom: ${rem("30px")};
+      justify-content: left;
+    }
+
+    button {
+      svg {
+        margin-left: ${rem("20px")};
+      }
+    }
+  }
+
+  @media ${device.m} {
+    margin: ${rem("150px")} auto ${rem("100px")} auto;
   }
 `;
