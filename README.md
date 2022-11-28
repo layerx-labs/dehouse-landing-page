@@ -1,6 +1,9 @@
 ## Deployed 🚀
 [dehouse.vercel.app](http://dehouse.vercel.app)
 
+## Figma 💅
+[UI Design](https://www.figma.com/file/T0hql5KJwMuuctHK5PGx5K/DeHouse?node-id=15%3A9&t=OFA80fTem3tHibIo-1)
+
 ## Getting Started
 
 First, run the development server:
