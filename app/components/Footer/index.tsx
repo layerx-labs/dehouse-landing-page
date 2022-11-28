@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Icon from "../Icon";
 import * as Styles from "./styles";
-import { colors } from "../../variables";
 
 export default function Footer() {
   const scrollTopTop = () => {
