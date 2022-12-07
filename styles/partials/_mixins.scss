@@ -1,0 +1,29 @@
+$breakpoints: (
+  sm: var(--breakpoints-sm),
+  md: var(--breakpoints-md),
+  lg: var(--breakpoints-lg),
+);
+
+$breakpoint: map-get($breakpoints, sm);
+
+@mixin hoverable($base, $hover) {
+  transition-duration: 1s;
+  transform: scale(1);
+  background-color: $base;
+  @include backlight($hover);
+  cursor: pointer;
+  &:hover {
+    background-color: $hover;
+    @include grow-item;
+    @include backlight($base);
+  }
+}
+
+@mixin grow-item {
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+@mixin backlight($color) {
+  box-shadow: 0 0 1.2rem $color !important;
+}
