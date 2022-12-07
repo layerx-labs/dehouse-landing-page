@@ -1,54 +1,28 @@
 import { useTheme } from "next-themes";
-import { useEffect } from "react";
-import {
-  ThemeToggleButton,
-  ThemeToggleComponent,
-  ThemeToggleInput,
-} from "./ThemeToogle.styles";
+import { useEffect, useState } from "react";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 enum Theme {
   DARK = "dark",
   LIGHT = "light",
 }
 
-const prefersDarkMQ = "(prefers-color-scheme: dark)";
-
 const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
+  const [isDark, setIsDark] = useState(undefined);
+  useEffect(() => {
+    if (isDark === undefined) {
+      setIsDark(theme === Theme.DARK);
+    }
+  }, [theme]);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia(prefersDarkMQ);
-    const handleChange = () => {
-      setTheme(mediaQuery.matches ? Theme.DARK : Theme.LIGHT);
-    };
-    mediaQuery.addEventListener("change", handleChange);
-    return () => mediaQuery.removeEventListener("change", handleChange);
-  }, []);
+    setTheme(isDark ? Theme.DARK : Theme.LIGHT);
+  }, [isDark]);
 
-  const toggleTheme = () =>
-    setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK);
+  const toggleTheme = () => setIsDark((prevState) => !prevState);
 
-  return (
-    <ThemeToggleComponent tabIndex={0} title="theme switcher" id="theme-switch">
-      <ThemeToggleInput
-        type="checkbox"
-        value=""
-        id="default-toggle"
-        role="switch"
-        checked={
-          (theme === "system" && window?.matchMedia(prefersDarkMQ)) ||
-          theme === Theme.DARK
-        }
-        aria-labelledby="theme-switch"
-        readOnly
-      />
-      <ThemeToggleButton
-        type="button"
-        aria-label="theme-toggle"
-        onClick={toggleTheme}
-      />
-    </ThemeToggleComponent>
-  );
+  return <DarkModeSwitch checked={isDark} onChange={toggleTheme} size={25} />;
 };
 
 export { ThemeToggle };
