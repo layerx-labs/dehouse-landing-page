@@ -1,0 +1,14 @@
+{
+  "name": "DeHouse-landing-page",
+  "description": "Landing website for DeHouse project",
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
