@@ -10,8 +10,8 @@ export default function Head() {
         key="keywords"
         content="web3, crypto, hub, cowork, cowork space, hacker space"
       />
-      <meta name="robots" content="noindex,nofollow" />
-      <meta name="googlebot" content="noindex,nofollow" />
+      <meta name="robots" content="index,follow" />
+      <meta name="googlebot" content="index,follow" />
       <meta
         property="og:title"
         content="DeHouse - The first crypto hub in Portugal"
@@ -25,7 +25,7 @@ export default function Head() {
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta property="og:url" content="https://dappkit.dev" />
+      <meta property="og:url" content="https://dehouse.org" />
       <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       <link rel="icon" href="/favicon.ico" />
     </>
