@@ -98,6 +98,18 @@ export const Wrapper = styled.footer`
     div {
       &.social {
         order: 1;
+
+        a {
+          border-bottom: 1px solid ${colors.white};
+          color: ${colors.white};
+          text-decoration: none;
+          transition-duration: ${global.hoverTransitionDuration};
+
+          &:hover {
+            border-color: ${colors.orange};
+            color: ${colors.orange};
+          }
+        }
       }
 
       &.back {

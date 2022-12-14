@@ -13,11 +13,11 @@ export default function Hero() {
         Portugal
       </h1>
       <Styles.PoweredBy>
-        <Link href="#0" target="_blank">
+        <Link href="https://taikai.network" target="_blank">
           <TaikaiLogo className="taikai" />
         </Link>
         <span>x</span>
-        <Link href="#0" target="_blank">
+        <Link href="https://www.workin.pro" target="_blank">
           <WorkInLogo className="work-in" />
         </Link>
       </Styles.PoweredBy>

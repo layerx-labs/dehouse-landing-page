@@ -25,7 +25,12 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <span>DeHouse © Made with ❤️ by TAIKAI</span>
+        <span>
+          DeHouse © Made with ❤️ by{" "}
+          <Link href="https://taikai.network" target="_blank">
+            TAIKAI
+          </Link>
+        </span>
       </div>
       <div className="back">
         <button onClick={scrollTopTop}>
