@@ -99,7 +99,7 @@ export const Wrapper = styled.footer`
       &.social {
         order: 1;
 
-        a {
+        span a {
           border-bottom: 1px solid ${colors.white};
           color: ${colors.white};
           text-decoration: none;
