@@ -15,20 +15,17 @@ export default function Footer() {
       <div className="social">
         <ul>
           <li>
-            <Link
-              href="https://linkedin.com/company/work-in-porto"
-              target="_blank"
-            >
-              <Icon icon="linkedin" />
+            <Link href="https://twitter.com/DeHouseDAO" target="_blank">
+              <Icon icon="twitter" />
             </Link>
           </li>
           <li>
-            <Link href="https://instagram.com/workin.caos" target="_blank">
+            <Link href="https://instagram.com/dehouse.dao" target="_blank">
               <Icon icon="instagram" />
             </Link>
           </li>
         </ul>
-        <span>© Work-In Porto, 2021</span>
+        <span>DeHouse © Made with ❤️ by TAIKAI</span>
       </div>
       <div className="back">
         <button onClick={scrollTopTop}>
