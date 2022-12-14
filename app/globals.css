@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --background-color: #000000;
+  --text-primary: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  background-color: var(--background-color);
+  font-family: "Space Grotesk", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-feature-settings: 'ss04' on;
+  color: var(--text-primary);
+  overflow-x: hidden;
+  transition-duration: 0.3s;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  font-size: 2.25rem; /* 36px */
+  line-height: 1.2;
+  letter-spacing: 0.4rem; /* 6.4px */
+}
+
+h3 {
+  font-size: 1.875rem; /* 30px */
+  letter-spacing: 0.125rem; /* 2px */
+}
+
+h4 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 400;
+  letter-spacing: 0.125rem; /* 2px */
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  white-space: nowrap;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute !important;
+  margin: 0;
+  border: 0;
+  width: 1px;
+  height: auto;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+@media (min-width: 700px) {
+  h1, h2 {
+    font-size: 2.875rem; /* 46px */
+    line-height: 1.2;
+    letter-spacing: 0.4rem; /* 6.4px */
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
