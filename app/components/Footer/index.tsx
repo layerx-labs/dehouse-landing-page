@@ -27,8 +27,8 @@ export default function Footer() {
         </ul>
         <span>
           DeHouse © Made with ❤️ by{" "}
-          <Link href="https://taikai.network" target="_blank">
-            TAIKAI
+          <Link href="https://layerx.xyz" target="_blank">
+            LayerX
           </Link>
         </span>
       </div>
