@@ -11,7 +11,7 @@ export default function Contacts() {
     <Styles.Wrapper>
       <h2>Join DeHouse today</h2>
       <Link
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeCef-PSnHMZmJrXL2XEnspo4dYqQl-7--QsyhZ201dilvlJw/viewform"
+        href="https://2brtqm28xmb.typeform.com/to/RvXOlHoz"
         target="_blank"
       >
         Reach out to us
