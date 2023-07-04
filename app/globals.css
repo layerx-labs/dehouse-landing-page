@@ -1,12 +1,32 @@
 @font-face {
-  font-family: 'Space Grotesk';
-  src: url('/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-family: 'DrukWide-Medium';
+  src: url('/fonts/Druk_Wide_Family/DrukWide-Medium.otf') format('opentype');
   font-display: swap;
 }
 
 :root {
-  --background-color: #000000;
-  --text-primary: #ffffff;
+  /* Colors */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Layout */
+  --layoutMaxWidth: 1120px;
+  --layoutPaddingX: 1rem; /* 16px */
+
+  /* Misc */
+  --defaultBackgroundColor: #000000;
+  --defaultFontColor: #ffffff;
+  --defaultTransitionDuration: 0.3s;
+
+  /* Typography */
+  --headingFontFamily: 'DrukWide-Medium';
+  --fontSizeS: 0.875rem; /* 14px */
+  --fontSizeM: 1rem; /* 16px */
+  --fontSizeL: 1.4375rem; /* 23px */
+  --fontSizeXl: 2.75rem; /* 44px */
+  --fontSizeXxl: 4.25rem; /* 68px */
+  --fontWeightRegular: 400;
+  --fontWeightMedium: 500;
 }
 
 * {
@@ -23,37 +43,29 @@ html {
 body {
   margin: 0;
   width: 100vw;
-  background-color: var(--background-color);
-  font-family: "Space Grotesk", Verdana, Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-feature-settings: 'ss04' on;
-  color: var(--text-primary);
+  background-color: var(--defaultBackgroundColor);
+  font-size: var(--fontSizeM);
+  font-weight: var(--fontWeightRegular);
+  color: var(--defaultFontColor);
   overflow-x: hidden;
-  transition-duration: 0.3s;
-}
-
-h1, h2, h3 {
-  margin: 0;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 h1, h2 {
-  font-size: 2.25rem; /* 36px */
-  line-height: 1.2;
-  letter-spacing: 0.4rem; /* 6.4px */
+  margin: 0;
+  font-family: var(--headingFontFamily);
+  font-weight: var(--fontWeightMedium);
+}
+
+h1 {
+  font-size: var(--fontSizeXxl);
+}
+
+h2 {
+  font-size: var(--fontSizeXl);
 }
 
 h3 {
-  font-size: 1.875rem; /* 30px */
-  letter-spacing: 0.125rem; /* 2px */
-}
-
-h4 {
-  font-size: 1.25rem; /* 20px */
-  font-weight: 400;
-  letter-spacing: 0.125rem; /* 2px */
+  font-size: var(--fontSizeL);
 }
 
 p {
@@ -72,7 +84,7 @@ button {
   background-color: transparent;
   padding: 0;
   white-space: nowrap;
-  transition-duration: 0.3s;
+  transition-duration: var(--defaultTransitionDuration);
   cursor: pointer;
 }
 
@@ -86,14 +98,6 @@ button {
   white-space: nowrap;
   overflow: hidden;
   clip: rect(0 0 0 0);
-}
-
-@media (min-width: 700px) {
-  h1, h2 {
-    font-size: 2.875rem; /* 46px */
-    line-height: 1.2;
-    letter-spacing: 0.4rem; /* 6.4px */
-  }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
