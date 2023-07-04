@@ -1,0 +1,22 @@
+.button {
+  border: 0.0625rem solid var(--defaultButtonBorderColor); /* 1px */
+  border-radius: var(--defaultButtonBorderRadius);
+  background: var(--defaultButtonBackground);
+  width: max-content;
+  height: var(--defaultButtonHeight);
+  padding: 0 var(--defaultButtonPaddingX);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fontSizeS);
+  color: var(--defaultButtonColor);
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.button svg {
+  margin-left: 0.25rem; /* 4px */
+  height: 1rem; /* 16px */
+  fill: var(--defaultButtonColor);
+}
