@@ -5,32 +5,25 @@
 // If you want to learn more about how lists are configured, please read
 // - https://keystonejs.com/docs/config/lists
 
-import { list } from '@keystone-6/core';
-import { allowAll, denyAll, allOperations } from '@keystone-6/core/access';
+import { list } from "@keystone-6/core";
+import { allowAll, denyAll, allOperations } from "@keystone-6/core/access";
 
 // see https://keystonejs.com/docs/fields/overview for the full list of fields
 //   this is a few common fields for an example
 import {
   text,
-  relationship,
   password,
   timestamp,
-  select,
   checkbox,
   calendarDay,
   image,
-} from '@keystone-6/core/fields';
-
-import { statelessSessions, } from '@keystone-6/core/session';
-import { createAuth } from '@keystone-6/auth';
-
-// the document field is a more complicated field, so it has it's own package
-import { document } from '@keystone-6/fields-document';
-// if you want to make your own fields, see https://keystonejs.com/docs/guides/custom-fields
+  select,
+  multiselect,
+} from "@keystone-6/core/fields";
 
 // when using Typescript, you can refine your types to a stricter subset by importing
 // the generated types from '.keystone/types'
-import type { Lists } from '.keystone/types';
+import type { Lists } from ".keystone/types";
 
 export type Session = {
   itemId: string;
@@ -56,7 +49,13 @@ function isAdmin({ session }: { session?: Session }) {
   return false;
 }
 
-function isAdminOrSameUser({ session, item }: { session?: Session; item: Lists.User.Item }) {
+function isAdminOrSameUser({
+  session,
+  item,
+}: {
+  session?: Session;
+  item: Lists.User.Item;
+}) {
   // you need to have a session to do this
   if (!session) return false;
 
@@ -81,7 +80,6 @@ function isAdminOrSameUserFilter({ session }: { session?: Session }) {
   };
 }
 
-
 export const lists: Lists = {
   User: list({
     access: {
@@ -95,8 +93,8 @@ export const lists: Lists = {
     },
     fields: {
       name: text(),
-      email: text({ isIndexed: 'unique'}),
-      password:  password({
+      email: text({ isIndexed: "unique" }),
+      password: password({
         access: {
           read: denyAll, // TODO: is this required?
           update: isAdminOrSameUser,
@@ -107,10 +105,10 @@ export const lists: Lists = {
         ui: {
           itemView: {
             // don't show this field if it isn't relevant
-            fieldMode: args => (isAdminOrSameUser(args) ? 'edit' : 'hidden'),
+            fieldMode: (args) => (isAdminOrSameUser(args) ? "edit" : "hidden"),
           },
           listView: {
-            fieldMode: 'hidden', // TODO: is this required?
+            fieldMode: "hidden", // TODO: is this required?
           },
         },
       }),
@@ -127,28 +125,24 @@ export const lists: Lists = {
         ui: {
           // only admins can edit this field
           createView: {
-            fieldMode: args => (isAdmin(args) ? 'edit' : 'hidden'),
+            fieldMode: (args) => (isAdmin(args) ? "edit" : "hidden"),
           },
           itemView: {
-            fieldMode: args => (isAdmin(args) ? 'edit' : 'read'),
+            fieldMode: (args) => (isAdmin(args) ? "edit" : "read"),
           },
         },
       }),
       createdAt: timestamp({
-        ui:{
+        ui: {
           createView: {
-            fieldMode: 'hidden',
-          }
-        } ,
-        defaultValue: { kind: "now" }
-      } )
+            fieldMode: "hidden",
+          },
+        },
+        defaultValue: { kind: "now" },
+      }),
     },
   }),
   Event: list({
-    // WARNING
-    //   for this starter project, anyone can create, query, update and delete anything
-    //   if you want to prevent random people on the internet from accessing your data,
-    //   you can find out more at https://keystonejs.com/docs/guides/auth-and-access-control
     access: {
       operation: {
         ...allOperations(isAdmin),
@@ -156,64 +150,94 @@ export const lists: Lists = {
       },
       filter: {},
     },
-
-    // this is the fields for our User list
     fields: {
-      // by adding isRequired, we enforce that every User should have a name
-      //   if no name is provided, an error will be displayed
-      cover: image({ storage: 'my_local_images' }),
+      cover: image({ storage: "events" }),
       name: text({ validation: { isRequired: true } }),
-      // slug: text({
-      //   isIndexed: "unique",
-      //   validation: { isRequired: true , }
-      // }),
       date: calendarDay({
         validation: { isRequired: true },
       }),
-      description: text({ validation: { isRequired: false, length: { max: 280 } } }),
+      description: text({
+        validation: { isRequired: false, length: { max: 280 } },
+      }),
       eventWebsite: text({ validation: { isRequired: false } }),
-      // types: relationship({
-      //   // we could have used 'Tag', but then the relationship would only be 1-way
-      //   ref: "Type.events",
-
-      //   // a Post can have many Tags, not just one
-      //   many: true,
-
-      //   // this is some customisations for changing how this will look in the AdminUI
-      //   ui: {
-      //     displayMode: "cards",
-      //     cardFields: ["name"],
-      //     inlineEdit: { fields: ["name"] },
-      //     linkToItem: true,
-      //     inlineConnect: true,
-      //     inlineCreate: { fields: ["name"] },
-      //   },
-      // }),
-
+      featured: checkbox({
+        defaultValue: true,
+        graphql: {
+          isNonNull: {
+            read: true,
+            create: true,
+          },
+        },
+      }),
       createdAt: timestamp({
-        ui:{
+        ui: {
           createView: {
-            fieldMode: 'hidden',
-          }
-        } ,
-        // this sets the timestamp to Date.now() when the user is first created
+            fieldMode: "hidden",
+          },
+        },
         defaultValue: { kind: "now" },
       }),
     },
   }),
-   // this last list is our Tag list, it only has a name field for now
-   Type: list({
-    // WARNING
-    //   for this starter project, anyone can create, query, update and delete anything
-    //   if you want to prevent random people on the internet from accessing your data,
-    //   you can find out more at https://keystonejs.com/docs/guides/auth-and-access-control
+  Location: list({
+    access: {
+      operation: {
+        ...allOperations(isAdmin),
+        query: allowAll,
+      },
+      filter: {},
+    },
+    fields: {
+      name: text({ validation: { isRequired: true } }),
+      address: text({ validation: { isRequired: true } }),
+      zip: text({ validation: { isRequired: true } }),
+      city: text({ validation: { isRequired: true } }),
+      country: select({
+        defaultValue: "pt",
+        options: [{ label: "Portugal", value: "pt" }],
+        validation: { isRequired: true },
+      }),
+      amenities: multiselect({
+        type: "enum",
+        options: [
+          { label: "Parking", value: "parking" },
+          { label: "Restaurants", value: "restaurants" },
+          { label: "Gym", value: "gym" },
+          { label: "Beach", value: "beach" },
+        ],
+      }),
+    },
+  }),
+  Testimonial: list({
+    access: {
+      operation: {
+        ...allOperations(isAdmin),
+        query: allowAll,
+      },
+      filter: {},
+    },
+    fields: {
+      avatar: image({ storage: "testimonials" }),
+      name: text({ validation: { isRequired: true } }),
+      message: text({ validation: { isRequired: true } }),
+      twitter: text({ validation: { isRequired: false } }),
+      linkedin: text({ validation: { isRequired: false } }),
+      createdAt: timestamp({
+        ui: {
+          createView: {
+            fieldMode: "hidden",
+          },
+        },
+        defaultValue: { kind: "now" },
+      }),
+    },
+  }),
+  // this last list is our Tag list, it only has a name field for now
+  Type: list({
     access: allowAll,
-
-    // setting this to isHidden for the user interface prevents this list being visible in the Admin UI
     ui: {
       isHidden: true,
     },
-
     // this is the fields for our Tag list
     fields: {
       name: text(),

@@ -134,6 +134,7 @@ type Event {
   date: CalendarDay
   description: String
   eventWebsite: String
+  featured: Boolean!
   createdAt: DateTime
 }
 
@@ -168,6 +169,7 @@ input EventWhereInput {
   date: CalendarDayFilter
   description: StringFilter
   eventWebsite: StringFilter
+  featured: BooleanFilter
   createdAt: DateTimeNullableFilter
 }
 
@@ -188,6 +190,7 @@ input EventOrderByInput {
   date: OrderDirection
   description: OrderDirection
   eventWebsite: OrderDirection
+  featured: OrderDirection
   createdAt: OrderDirection
 }
 
@@ -197,6 +200,7 @@ input EventUpdateInput {
   date: CalendarDay
   description: String
   eventWebsite: String
+  featured: Boolean
   createdAt: DateTime
 }
 
@@ -218,6 +222,130 @@ input EventCreateInput {
   date: CalendarDay
   description: String
   eventWebsite: String
+  featured: Boolean! = true
+  createdAt: DateTime
+}
+
+type Location {
+  id: ID!
+  name: String
+  address: String
+  zip: String
+  city: String
+  country: String
+  amenities: [LocationAmenityType!]
+}
+
+enum LocationAmenityType {
+  parking
+  restaurants
+  gym
+  beach
+}
+
+input LocationWhereUniqueInput {
+  id: ID
+}
+
+input LocationWhereInput {
+  AND: [LocationWhereInput!]
+  OR: [LocationWhereInput!]
+  NOT: [LocationWhereInput!]
+  id: IDFilter
+  name: StringFilter
+  address: StringFilter
+  zip: StringFilter
+  city: StringFilter
+  country: StringFilter
+}
+
+input LocationOrderByInput {
+  id: OrderDirection
+  name: OrderDirection
+  address: OrderDirection
+  zip: OrderDirection
+  city: OrderDirection
+  country: OrderDirection
+}
+
+input LocationUpdateInput {
+  name: String
+  address: String
+  zip: String
+  city: String
+  country: String
+  amenities: [LocationAmenityType!]
+}
+
+input LocationUpdateArgs {
+  where: LocationWhereUniqueInput!
+  data: LocationUpdateInput!
+}
+
+input LocationCreateInput {
+  name: String
+  address: String
+  zip: String
+  city: String
+  country: String
+  amenities: [LocationAmenityType!]
+}
+
+type Testimonial {
+  id: ID!
+  avatar: ImageFieldOutput
+  name: String
+  message: String
+  twitter: String
+  linkedin: String
+  createdAt: DateTime
+}
+
+input TestimonialWhereUniqueInput {
+  id: ID
+}
+
+input TestimonialWhereInput {
+  AND: [TestimonialWhereInput!]
+  OR: [TestimonialWhereInput!]
+  NOT: [TestimonialWhereInput!]
+  id: IDFilter
+  name: StringFilter
+  message: StringFilter
+  twitter: StringFilter
+  linkedin: StringFilter
+  createdAt: DateTimeNullableFilter
+}
+
+input TestimonialOrderByInput {
+  id: OrderDirection
+  name: OrderDirection
+  message: OrderDirection
+  twitter: OrderDirection
+  linkedin: OrderDirection
+  createdAt: OrderDirection
+}
+
+input TestimonialUpdateInput {
+  avatar: ImageFieldInput
+  name: String
+  message: String
+  twitter: String
+  linkedin: String
+  createdAt: DateTime
+}
+
+input TestimonialUpdateArgs {
+  where: TestimonialWhereUniqueInput!
+  data: TestimonialUpdateInput!
+}
+
+input TestimonialCreateInput {
+  avatar: ImageFieldInput
+  name: String
+  message: String
+  twitter: String
+  linkedin: String
   createdAt: DateTime
 }
 
@@ -274,6 +402,18 @@ type Mutation {
   updateEvents(data: [EventUpdateArgs!]!): [Event]
   deleteEvent(where: EventWhereUniqueInput!): Event
   deleteEvents(where: [EventWhereUniqueInput!]!): [Event]
+  createLocation(data: LocationCreateInput!): Location
+  createLocations(data: [LocationCreateInput!]!): [Location]
+  updateLocation(where: LocationWhereUniqueInput!, data: LocationUpdateInput!): Location
+  updateLocations(data: [LocationUpdateArgs!]!): [Location]
+  deleteLocation(where: LocationWhereUniqueInput!): Location
+  deleteLocations(where: [LocationWhereUniqueInput!]!): [Location]
+  createTestimonial(data: TestimonialCreateInput!): Testimonial
+  createTestimonials(data: [TestimonialCreateInput!]!): [Testimonial]
+  updateTestimonial(where: TestimonialWhereUniqueInput!, data: TestimonialUpdateInput!): Testimonial
+  updateTestimonials(data: [TestimonialUpdateArgs!]!): [Testimonial]
+  deleteTestimonial(where: TestimonialWhereUniqueInput!): Testimonial
+  deleteTestimonials(where: [TestimonialWhereUniqueInput!]!): [Testimonial]
   createType(data: TypeCreateInput!): Type
   createTypes(data: [TypeCreateInput!]!): [Type]
   updateType(where: TypeWhereUniqueInput!, data: TypeUpdateInput!): Type
@@ -309,6 +449,12 @@ type Query {
   events(where: EventWhereInput! = {}, orderBy: [EventOrderByInput!]! = [], take: Int, skip: Int! = 0, cursor: EventWhereUniqueInput): [Event!]
   event(where: EventWhereUniqueInput!): Event
   eventsCount(where: EventWhereInput! = {}): Int
+  locations(where: LocationWhereInput! = {}, orderBy: [LocationOrderByInput!]! = [], take: Int, skip: Int! = 0, cursor: LocationWhereUniqueInput): [Location!]
+  location(where: LocationWhereUniqueInput!): Location
+  locationsCount(where: LocationWhereInput! = {}): Int
+  testimonials(where: TestimonialWhereInput! = {}, orderBy: [TestimonialOrderByInput!]! = [], take: Int, skip: Int! = 0, cursor: TestimonialWhereUniqueInput): [Testimonial!]
+  testimonial(where: TestimonialWhereUniqueInput!): Testimonial
+  testimonialsCount(where: TestimonialWhereInput! = {}): Int
   types(where: TypeWhereInput! = {}, orderBy: [TypeOrderByInput!]! = [], take: Int, skip: Int! = 0, cursor: TypeWhereUniqueInput): [Type!]
   type(where: TypeWhereUniqueInput!): Type
   typesCount(where: TypeWhereInput! = {}): Int

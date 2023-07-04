@@ -61,20 +61,35 @@ export default withAuth(
       },
     },
     storage: {
-      my_local_images: {
+      events: {
         // Images that use this store will be stored on the local machine
         kind: 'local',
         // This store is used for the image field type
         type: 'image',
         // The URL that is returned in the Keystone GraphQL API
-        generateUrl: (path) => `${baseUrl}/images${path}`,
+        generateUrl: (path) => `${baseUrl}/images/events/${path}`,
         // The route that will be created in Keystone's backend to serve the images
         serverRoute: {
-          path: '/images'
+          path: '/images/events'
         },
         // Set serverRoute to null if you don't want a route to be created in Keystone
         // serverRoute: null
-        storagePath: 'public/images'
+        storagePath: 'public/images/events'
+      },
+      testimonials: {
+        // Images that use this store will be stored on the local machine
+        kind: 'local',
+        // This store is used for the image field type
+        type: 'image',
+        // The URL that is returned in the Keystone GraphQL API
+        generateUrl: (path) => `${baseUrl}/images/testimonials/${path}`,
+        // The route that will be created in Keystone's backend to serve the images
+        serverRoute: {
+          path: '/images/testimonials'
+        },
+        // Set serverRoute to null if you don't want a route to be created in Keystone
+        // serverRoute: null
+        storagePath: 'public/images/testimonials'
       }
     }
   })

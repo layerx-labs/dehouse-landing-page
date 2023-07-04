@@ -1,8 +1,11 @@
-import { gql } from '@apollo/client'
+import { gql } from "@apollo/client";
 
 export const FEATURED_EVENTS_QUERY = gql`
-  query EVENTS_QUERY($orderBy: [EventOrderByInput!]!, $where: EventWhereInput!, $take: Int) {
-    events(orderBy: $orderBy, where: $where, take: $take) {
+  query FEATURED_EVENTS_QUERY(
+    $orderBy: [EventOrderByInput!]!
+    $where: EventWhereInput!
+  ) {
+    events(orderBy: $orderBy, where: $where) {
       id
       cover {
         id
@@ -16,10 +19,14 @@ export const FEATURED_EVENTS_QUERY = gql`
       eventWebsite
     }
   }
-`
+`;
 
 export const ALL_EVENTS_QUERY = gql`
-  query EVENTS_QUERY($orderBy: [EventOrderByInput!]!, $skip: Int!, $where: EventWhereInput!) {
+  query ALL_EVENTS_QUERY(
+    $orderBy: [EventOrderByInput!]!
+    $skip: Int!
+    $where: EventWhereInput!
+  ) {
     events(orderBy: $orderBy, skip: $skip, where: $where) {
       id
       cover {
@@ -34,4 +41,33 @@ export const ALL_EVENTS_QUERY = gql`
       eventWebsite
     }
   }
-`
+`;
+
+export const LOCATIONS_QUERY = gql`
+  query LOCATIONS_QUERY {
+    locations {
+      id
+      name
+      address
+      zip
+      city
+      country
+      amenities
+    }
+  }
+`;
+
+export const TESTIMONIALS_QUERY = gql`
+  query TESTIMONIALS_QUERY {
+    testimonials {
+      id
+      avatar {
+        url
+      }
+      name
+      message
+      twitter
+      linkedin
+    }
+  }
+`;
