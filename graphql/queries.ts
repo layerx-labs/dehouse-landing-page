@@ -43,6 +43,14 @@ export const ALL_EVENTS_QUERY = gql`
   }
 `;
 
+export const CITIES_QUERY = gql`
+  query CITIES_QUERY {
+    locations {
+      city
+    }
+  }
+`;
+
 export const LOCATIONS_QUERY = gql`
   query LOCATIONS_QUERY {
     locations {

@@ -4,7 +4,9 @@ import styles from "./styles.module.css";
 import Image01 from "../../../public/gallery/001.jpg";
 import Image02 from "../../../public/gallery/011.jpg";
 
-export default function Hero() {
+export default function Hero(props: any) {
+  const { cities } = props;
+
   return (
     <div className={styles.hero}>
       <div className={styles.ellipse} />
@@ -24,8 +26,9 @@ export default function Hero() {
             grow.
           </p>
           <div className={styles.buttons}>
-            <ButtonLink url="#0" label="Porto" icon="arrowRight" />
-            <ButtonLink url="#0" label="Braga" icon="arrowRight" />
+            {cities.map((location: { city: string }) => (
+              <ButtonLink url="#0" label={location.city} icon="arrowRight" />
+            ))}
           </div>
         </div>
         <div className={styles.images}>

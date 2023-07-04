@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import { getClient } from "@/lib/client";
 import {
   FEATURED_EVENTS_QUERY,
+  CITIES_QUERY,
   LOCATIONS_QUERY,
   TESTIMONIALS_QUERY,
 } from "@/graphql/queries";
@@ -18,6 +19,10 @@ async function getData() {
       },
       orderBy: [{ date: "asc" }],
     },
+  });
+
+  const cities = await getClient().query({
+    query: CITIES_QUERY,
   });
 
   const locations = await getClient().query({
@@ -38,6 +43,7 @@ async function getData() {
 
   return {
     events: featuredEvents.data.events,
+    cities: cities.data.locations,
     locations: locations.data.locations,
     testimonials: testimonials.data.testimonials,
   };
@@ -49,7 +55,7 @@ export default async function Home() {
   return (
     <main>
       <Nav />
-      <Hero />
+      <Hero cities={data.cities} />
       {/* <div>
         <h1>Events</h1>
         <ul>
