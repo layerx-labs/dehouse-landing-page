@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'DrukWide-Medium';
-  src: url('/fonts/Druk_Wide_Family/DrukWide-Medium.otf') format('opentype');
+  font-family: "DrukWide-Medium";
+  src: url("/fonts/Druk_Wide_Family/DrukWide-Medium.otf") format("opentype");
   font-display: swap;
 }
 
@@ -8,7 +8,7 @@
   /* Colors */
   --white: #ffffff;
   --black: #000000;
-  --grey850: #23232A;
+  --grey850: #23232a;
 
   /* Layout */
   --layoutMaxWidth: 1120px;
@@ -19,9 +19,12 @@
   --defaultFontColor: var(--white);
   --defaultTransitionDuration: 0.3s;
   --logoColor: var(--white);
+  --ellipseWidth: 47.5rem; /* 760px */
+  --ellipseHeight: 25rem; /* 400px */
+  --ellipseColor: #9d5cf4;
 
   /* Typography */
-  --headingFontFamily: 'DrukWide-Medium';
+  --headingFontFamily: "DrukWide-Medium";
   --fontSizeXs: 0.75rem; /* 12px */
   --fontSizeS: 0.875rem; /* 14px */
   --fontSizeM: 1rem; /* 16px */
@@ -32,13 +35,29 @@
   --fontWeightMedium: 500;
 
   /* Buttons */
+  --defaultButtonBorderColor: #36393f;
+  --defaultButtonBorderRadius: 0.5rem; /* 8px */
+  --defaultButtonBackground: #232428;
+  --defaultButtonHeight: 2rem; /* 32px */
+  --defaultButtonPaddingX: 1rem; /* 16px */
+  --defaultButtonColor: var(--white);
+  --buttonInnerShadow: inset 0rem -0.1875rem 0.0625rem 0rem rgba(0, 0, 0, 0.13),
+    inset 0rem 0.125rem 0.0625rem 0rem rgba(255, 255, 255, 0.23);
   --availabilityButtonBorderColor: #65882b;
   --availabilityButtonBackgroundColor: #bbfc4f;
+  --availabilityButtonColor: var(--grey850);
+  --heroButtonBorderColor: #9d5cf4;
+  --heroButtonBackground: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.04) 100%
+    ),
+    linear-gradient(to left, #120d1a, #120d1a);
 
   /* Nav */
-  --menuLinkColor: var(--white);
+  --navHeight: 3.875rem; /* 62px */
+  --navLinkColor: var(--white);
 }
-
 
 * {
   box-sizing: border-box;
@@ -61,7 +80,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2 {
+main {
+  padding: 0 var(--layoutPaddingX);
+}
+
+h1,
+h2 {
   margin: 0;
   font-family: var(--headingFontFamily);
   font-weight: var(--fontWeightMedium);
@@ -82,6 +106,7 @@ h3 {
 p {
   margin: 0;
   line-height: 1.5;
+  opacity: 50%;
 }
 
 ul {

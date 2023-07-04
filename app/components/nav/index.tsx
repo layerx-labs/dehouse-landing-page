@@ -1,6 +1,7 @@
 import Link from "next/link";
 import DeHouseLogo from "@/utils/dehouse-logo";
 import styles from "./styles.module.css";
+import ButtonLink from "@/ui/button-link";
 
 export default function Nav() {
   return (
@@ -18,14 +19,10 @@ export default function Nav() {
             <Link href="#agenda">Agenda</Link>
           </li>
         </ul>
-        <Link
-          className={styles.button}
-          href={process.env.AVAILABILITY_FORM_URL ?? "#0"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Check availability
-        </Link>
+        <ButtonLink
+          url={process.env.AVAILABILITY_FORM_URL ?? "#0"}
+          label="Check availability"
+        />
       </div>
     </nav>
   );

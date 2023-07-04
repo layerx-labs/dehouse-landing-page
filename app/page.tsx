@@ -1,10 +1,11 @@
+import Nav from "@/components/nav";
+import Hero from "@/components/hero";
+import { getClient } from "@/lib/client";
 import {
   FEATURED_EVENTS_QUERY,
   LOCATIONS_QUERY,
   TESTIMONIALS_QUERY,
 } from "@/graphql/queries";
-import { getClient } from "@/lib/client";
-import Nav from "@/components/nav";
 
 async function getData() {
   const featuredEvents = await getClient().query({
@@ -48,6 +49,7 @@ export default async function Home() {
   return (
     <main>
       <Nav />
+      <Hero />
       {/* <div>
         <h1>Events</h1>
         <ul>

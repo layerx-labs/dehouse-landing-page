@@ -1,0 +1,77 @@
+.hero {
+  position: relative;
+  padding: calc(var(--navHeight) + 10rem) 0 10rem; /* 160px 0 */
+}
+
+.hero .ellipse {
+  position: absolute;
+  width: var(--ellipseWidth);
+  height: var(--ellipseHeight);
+  top: calc(var(--ellipseHeight) / 2 * -1);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ellipseColor);
+  filter: blur(200px);
+}
+
+.hero .container {
+  margin: 0 auto;
+  max-width: calc(var(--layoutMaxWidth) + 6.25rem); /* 100px */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 8.125rem; /* 130px */
+}
+
+.hero .container .content {
+  max-width: 32.8125rem; /* 525px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .container .content h1 {
+  margin-bottom: 1rem; /* 16px */
+}
+
+.hero .container .content p:not(:last-child) {
+  margin-bottom: 1rem; /* 16px */
+}
+
+.hero .container .content .buttons {
+  margin-top: 2.5rem; /* 40px */
+  display: flex;
+}
+
+.hero .container .content .buttons a:not(:last-child) {
+  margin-right: 1rem; /* 16px */
+}
+
+.hero .container .content .buttons a {
+  min-width: 8rem; /* 128px */
+  border-color: var(--heroButtonBorderColor);
+  background: var(--heroButtonBackground);
+  padding: 0 0.75rem; /* 0 12px */
+  box-shadow: var(--buttonInnerShadow);
+}
+
+.hero .container .images {
+  position: relative;
+  text-align: right;
+}
+
+.hero .container .images img {
+  border-radius: 1rem; /* 16px */
+  width: 100%;
+  height: auto;
+}
+
+.hero .container .images img:first-child {
+  position: absolute;
+  left: 0;
+  max-width: 21.875rem; /* 350px */
+}
+
+.hero .container .images img:last-child {
+  margin-top: 5.625rem; /* 90px */
+  max-width: 31.25rem; /* 500px */
+}

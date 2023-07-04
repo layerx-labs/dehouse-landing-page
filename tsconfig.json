@@ -24,6 +24,9 @@
       "@/components/*": [
         "app/components/*"
       ],
+      "@/ui/*": [
+        "app/components/ui/*"
+      ],
       "@/graphql/*": [
         "graphql/*"
       ],
