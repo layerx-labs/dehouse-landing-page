@@ -8,18 +8,21 @@
   /* Colors */
   --white: #ffffff;
   --black: #000000;
+  --grey850: #23232A;
 
   /* Layout */
   --layoutMaxWidth: 1120px;
   --layoutPaddingX: 1rem; /* 16px */
 
   /* Misc */
-  --defaultBackgroundColor: #000000;
-  --defaultFontColor: #ffffff;
+  --defaultBackgroundColor: var(--black);
+  --defaultFontColor: var(--white);
   --defaultTransitionDuration: 0.3s;
+  --logoColor: var(--white);
 
   /* Typography */
   --headingFontFamily: 'DrukWide-Medium';
+  --fontSizeXs: 0.75rem; /* 12px */
   --fontSizeS: 0.875rem; /* 14px */
   --fontSizeM: 1rem; /* 16px */
   --fontSizeL: 1.4375rem; /* 23px */
@@ -27,7 +30,15 @@
   --fontSizeXxl: 4.25rem; /* 68px */
   --fontWeightRegular: 400;
   --fontWeightMedium: 500;
+
+  /* Buttons */
+  --availabilityButtonBorderColor: #65882b;
+  --availabilityButtonBackgroundColor: #bbfc4f;
+
+  /* Nav */
+  --menuLinkColor: var(--white);
 }
+
 
 * {
   box-sizing: border-box;

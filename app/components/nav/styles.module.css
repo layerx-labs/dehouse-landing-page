@@ -1,0 +1,54 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 3.875rem; /* 62px */
+}
+
+.nav > div {
+  position: relative;
+  margin: 0 auto;
+  max-width: var(--layoutMaxWidth);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav svg {
+  width: auto;
+  height: 1rem; /* 16px */
+}
+
+.nav ul {
+  position: absolute;
+  display: flex;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--fontSizeXs);
+}
+
+.nav ul li a {
+  padding: 0.5rem; /* 8px */
+  color: var(--menuLinkColor);
+  text-decoration: none;
+}
+
+.nav ul li:not(:last-child) {
+  margin-right: 5.5rem; /* 88px */
+}
+
+.button {
+  border: 0.0625rem solid var(--availabilityButtonBorderColor); /* 1px */
+  border-radius: 0.5rem; /* 8px */
+  background-color: var(--availabilityButtonBackgroundColor);
+  height: 1.875rem; /* 30px */
+  padding: 0 0.75rem; /* 0 12px */
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0rem -0.1875rem 0.0625rem 0rem rgba(0, 0, 0, 0.13),
+    inset 0rem 0.125rem 0.0625rem 0rem rgba(255, 255, 255, 0.23);
+  font-size: var(--fontSizeXs);
+  color: var(--grey850);
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}

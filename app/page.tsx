@@ -4,6 +4,7 @@ import {
   TESTIMONIALS_QUERY,
 } from "@/graphql/queries";
 import { getClient } from "@/lib/client";
+import Nav from "@/components/nav";
 
 async function getData() {
   const featuredEvents = await getClient().query({
@@ -46,7 +47,8 @@ export default async function Home() {
 
   return (
     <main>
-      <div>
+      <Nav />
+      {/* <div>
         <h1>Events</h1>
         <ul>
           {data.events.map((event: any, index: number) => (
@@ -77,7 +79,7 @@ export default async function Home() {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </main>
   );
 }
