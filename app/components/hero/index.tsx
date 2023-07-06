@@ -9,7 +9,7 @@ export default function Hero(props: any) {
 
   return (
     <div className={styles.hero}>
-      <div className={styles.ellipse} />
+      <div className={`ellipse ${styles.ellipseHero}`} />
       <div className={styles.container}>
         <div className={styles.content}>
           <h1>

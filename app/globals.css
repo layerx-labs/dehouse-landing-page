@@ -13,6 +13,7 @@
   /* Layout */
   --layoutMaxWidth: 1120px;
   --layoutPaddingX: 1rem; /* 16px */
+  --sectionPaddingY: 10rem; /* 160px */
 
   /* Misc */
   --defaultBackgroundColor: var(--black);
@@ -100,7 +101,9 @@ h2 {
 }
 
 h3 {
+  margin: 0;
   font-size: var(--fontSizeL);
+  font-weight: var(--fontWeightRegular);
 }
 
 p {
@@ -134,6 +137,14 @@ button {
   white-space: nowrap;
   overflow: hidden;
   clip: rect(0 0 0 0);
+}
+
+.ellipse {
+  position: absolute;
+  width: var(--ellipseWidth);
+  height: var(--ellipseHeight);
+  background: var(--ellipseColor);
+  filter: blur(200px);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

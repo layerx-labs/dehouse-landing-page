@@ -1,0 +1,26 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 6rem; /* 96px */
+  grid-row-gap: 4.5rem; /* 72px */
+}
+
+.services h3 {
+  margin: 1rem 0; /* 16px 0 */
+}
+
+.services p {
+  font-size: var(--fontSizeS);
+  letter-spacing: 0.03125rem; /* 0.5px */
+}
+
+.services svg {
+  width: 2rem; /* 32px */
+  height: auto;
+}
+
+.ellipseServices {
+  /* top: calc(var(--ellipseHeight) / 2 * -1); */
+  left: 0;
+  transform: translateX(-75%);
+}
