@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Icon from "../icon";
+import Icon from "../icons";
 import styles from "./styles.module.css";
 import { ButtonLinkProps } from "./types";
 
