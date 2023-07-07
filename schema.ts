@@ -188,6 +188,7 @@ export const lists: Lists = {
       filter: {},
     },
     fields: {
+      cover: image({ storage: "locations" }),
       name: text({ validation: { isRequired: true } }),
       address: text({ validation: { isRequired: true } }),
       zip: text({ validation: { isRequired: true } }),
@@ -197,6 +198,7 @@ export const lists: Lists = {
         options: [{ label: "Portugal", value: "pt" }],
         validation: { isRequired: true },
       }),
+      description: text({ validation: { isRequired: true } }),
       amenities: multiselect({
         type: "enum",
         options: [

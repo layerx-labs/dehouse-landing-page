@@ -36,13 +36,19 @@ model Event {
 }
 
 model Location {
-  id        String @id @default(uuid()) @postgresql.Uuid
-  name      String @default("")
-  address   String @default("")
-  zip       String @default("")
-  city      String @default("")
-  country   String @default("pt")
-  amenities Json   @default("[]")
+  id              String  @id @default(uuid()) @postgresql.Uuid
+  cover_filesize  Int?
+  cover_extension String?
+  cover_width     Int?
+  cover_height    Int?
+  cover_id        String?
+  name            String  @default("")
+  address         String  @default("")
+  zip             String  @default("")
+  city            String  @default("")
+  country         String  @default("pt")
+  description     String  @default("")
+  amenities       Json    @default("[]")
 }
 
 model Testimonial {

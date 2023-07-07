@@ -2,6 +2,7 @@ import Nav from "@/components/nav";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
 import Benefits from "@/components/benefits";
+import Locations from "@/components/locations";
 import { getClient } from "@/lib/client";
 import {
   FEATURED_EVENTS_QUERY,
@@ -60,23 +61,13 @@ export default async function Home() {
       <Hero cities={data.cities} />
       <Services />
       <Benefits />
+      <Locations locations={data.locations} />
       {/* <div>
         <h1>Events</h1>
         <ul>
           {data.events.map((event: any, index: number) => (
             <li key={index}>
               {event.name} - {event.cover.url}
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div>
-        <h1>Locations</h1>
-        <ul>
-          {data.locations.map((location: any, index: number) => (
-            <li key={index}>
-              {location.name} - {location.city}
             </li>
           ))}
         </ul>

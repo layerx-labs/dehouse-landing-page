@@ -55,11 +55,18 @@ export const LOCATIONS_QUERY = gql`
   query LOCATIONS_QUERY {
     locations {
       id
+      cover {
+        id
+        url
+        width
+        height
+      }
       name
       address
       zip
       city
       country
+      description
       amenities
     }
   }

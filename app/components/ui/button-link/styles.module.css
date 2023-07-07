@@ -1,7 +1,7 @@
 .button {
   border: 0.0625rem solid var(--defaultButtonBorderColor); /* 1px */
   border-radius: var(--defaultButtonBorderRadius);
-  background: var(--defaultButtonBackground);
+  background: var(--defaultButtonBackgroundColor);
   width: max-content;
   height: var(--defaultButtonHeight);
   padding: 0 var(--defaultButtonPaddingX);

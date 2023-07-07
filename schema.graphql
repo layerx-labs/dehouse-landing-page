@@ -228,11 +228,13 @@ input EventCreateInput {
 
 type Location {
   id: ID!
+  cover: ImageFieldOutput
   name: String
   address: String
   zip: String
   city: String
   country: String
+  description: String
   amenities: [LocationAmenityType!]
 }
 
@@ -257,6 +259,7 @@ input LocationWhereInput {
   zip: StringFilter
   city: StringFilter
   country: StringFilter
+  description: StringFilter
 }
 
 input LocationOrderByInput {
@@ -266,14 +269,17 @@ input LocationOrderByInput {
   zip: OrderDirection
   city: OrderDirection
   country: OrderDirection
+  description: OrderDirection
 }
 
 input LocationUpdateInput {
+  cover: ImageFieldInput
   name: String
   address: String
   zip: String
   city: String
   country: String
+  description: String
   amenities: [LocationAmenityType!]
 }
 
@@ -283,11 +289,13 @@ input LocationUpdateArgs {
 }
 
 input LocationCreateInput {
+  cover: ImageFieldInput
   name: String
   address: String
   zip: String
   city: String
   country: String
+  description: String
   amenities: [LocationAmenityType!]
 }
 

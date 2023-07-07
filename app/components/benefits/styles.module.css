@@ -6,9 +6,9 @@
 }
 
 .benefits > div {
-  border: 0.0625rem solid #232428; /* 1px */
+  border: 0.0625rem solid var(--panelBorderColor); /* 1px */
   border-radius: 0.5rem; /* 8px */
-  background-color: #151618;
+  background-color: var(--panelBackgroundColor);
   padding: 1.5rem; /* 24px */
 }
 
