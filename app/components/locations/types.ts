@@ -1,10 +1,4 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-
-interface Cover {
-  url: string | StaticImport;
-  width: number;
-  height: number;
-}
+import { Cover } from "../ui/panel/types";
 
 interface Location {
   name: string;
