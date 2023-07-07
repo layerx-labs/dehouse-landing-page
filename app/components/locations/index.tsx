@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Section from "@/ui/section";
 import Panel from "@/ui/panel";
+import Ellipse from "../../../public/ellipse-02.png";
 import styles from "./styles.module.css";
 import { LocationsProps } from "./types";
 
@@ -8,7 +10,13 @@ export default function Locations(props: LocationsProps) {
 
   return (
     <Section title="Locations">
-      <div className={`ellipse ${styles.ellipseLocations}`} />
+      <Image
+        className={`ellipse ${styles.ellipseLocations}`}
+        src={Ellipse}
+        quality={10}
+        alt=""
+        placeholder="blur"
+      />
       <div className={styles.locations}>
         {locations.map((location, index) => (
           <Panel

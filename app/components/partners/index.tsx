@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import styles from "./styles.module.css";
 import {
@@ -10,6 +11,7 @@ import {
   Polkamarkets,
   BrightPixel,
 } from "@/utils/brands";
+import Ellipse from "../../../public/ellipse-02.png";
 
 export default function Partners() {
   const logoFill = "var(--partnersColor)";
@@ -50,7 +52,13 @@ export default function Partners() {
 
   return (
     <div className={styles.wrapper}>
-      <div className={`ellipse ${styles.ellipsePartners}`} />
+      <Image
+        className={`ellipse ${styles.ellipsePartners}`}
+        src={Ellipse}
+        quality={10}
+        alt=""
+        placeholder="blur"
+      />
       <h2>Partners</h2>
       <Marquee gradient={false} direction="left">
         <ul>

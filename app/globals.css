@@ -8,11 +8,11 @@
   /* Colors */
   --white: #ffffff;
   --black: #000000;
-  --grey50: #F1F1F3;
-  --grey150: #D5D6DC;
-  --grey200: #C7C8D1;
+  --grey50: #f1f1f3;
+  --grey150: #d5d6dc;
+  --grey200: #c7c8d1;
   --grey850: #23232a;
-  --purple: #9D5CF4;
+  --purple: #9d5cf4;
 
   /* Layout */
   --layoutMaxWidth: 1120px;
@@ -24,9 +24,6 @@
   --defaultFontColor: var(--white);
   --defaultTransitionDuration: 0.3s;
   --logoColor: var(--white);
-  --ellipseWidth: 47.5rem; /* 760px */
-  --ellipseHeight: 25rem; /* 400px */
-  --ellipseColor: var(--purple);
   --partnersColor: var(--grey200);
 
   /* Typography */
@@ -90,7 +87,7 @@
   /* Footer */
   --socialIconsColor: var(--white);
   --newsletterLabelColor: var(--grey50);
-  --newsletterPlaceholderColor: #959AA5;
+  --newsletterPlaceholderColor: #959aa5;
   --newsletterInputColor: var(--white);
   --newsletterButtonBackgroundColor: var(--purple);
   --newsletterButtonColor: var(--white);
@@ -178,10 +175,7 @@ button {
 
 .ellipse {
   position: absolute;
-  width: var(--ellipseWidth);
-  height: var(--ellipseHeight);
-  background: var(--ellipseColor);
-  filter: blur(200px);
+  z-index: -1;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

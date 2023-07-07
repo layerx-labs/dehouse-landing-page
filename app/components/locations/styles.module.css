@@ -17,7 +17,6 @@
 }
 
 .ellipseLocations {
-  top: 0;
-  right: 0;
-  transform: translateX(75%);
+  right: calc(var(--layoutPaddingX) * -1);
+  transform: translateY(-50%) rotate(180deg);
 }

@@ -3,13 +3,20 @@ import ButtonLink from "../ui/button-link";
 import styles from "./styles.module.css";
 import Image01 from "../../../public/gallery/001.jpg";
 import Image02 from "../../../public/gallery/011.jpg";
+import Ellipse from "../../../public/ellipse-01.png";
 
 export default function Hero(props: any) {
   const { cities } = props;
 
   return (
-    <div className={styles.hero}>
-      <div className={`ellipse ${styles.ellipseHero}`} />
+    <div className={`ellipse ${styles.hero}`}>
+      <Image
+        className={`ellipse ${styles.ellipseHero}`}
+        src={Ellipse}
+        quality={10}
+        alt=""
+        placeholder="blur"
+      />
       <div className={styles.container}>
         <div className={styles.content}>
           <h1>

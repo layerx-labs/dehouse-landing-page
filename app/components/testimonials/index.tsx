@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import Icon from "@/ui/icons";
+import Ellipse from "../../../public/ellipse-02.png";
 import styles from "./styles.module.css";
 import { TestimonialsProps } from "./types";
 import Link from "next/link";
@@ -15,7 +16,13 @@ export default function Testimonials(props: TestimonialsProps) {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua
       </p>
-      <div className={`ellipse ${styles.ellipseTestimonials}`} />
+      <Image
+        className={`ellipse ${styles.ellipseTestimonials}`}
+        src={Ellipse}
+        quality={10}
+        alt=""
+        placeholder="blur"
+      />
       <div className={styles.testimonials}>
         <Marquee gradient={false} direction="right" speed={25} pauseOnHover>
           {testimonials.map((item, index) => (

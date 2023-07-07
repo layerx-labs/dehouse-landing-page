@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Section from "@/ui/section";
 import {
   Assistance,
@@ -7,6 +8,7 @@ import {
   Access,
   Expenses,
 } from "@/ui/icons/services";
+import Ellipse from "../../../public/ellipse-02.png";
 import styles from "./styles.module.css";
 
 export default function Services() {
@@ -45,7 +47,13 @@ export default function Services() {
 
   return (
     <Section title="Services">
-      <div className={`ellipse ${styles.ellipseServices}`} />
+      <Image
+        className={`ellipse ${styles.ellipseServices}`}
+        src={Ellipse}
+        quality={10}
+        alt=""
+        placeholder="blur"
+      />
       <div className={styles.services}>
         {services.map((service, index) => (
           <div key={index}>

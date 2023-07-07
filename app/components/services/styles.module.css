@@ -20,6 +20,6 @@
 }
 
 .ellipseServices {
-  left: 0;
-  transform: translateX(-75%);
+  left: calc(var(--layoutPaddingX) * -1);
+  transform: translateY(-50%);
 }

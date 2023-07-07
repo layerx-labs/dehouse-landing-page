@@ -74,6 +74,6 @@
 }
 
 .ellipseTestimonials {
-  right: 0;
-  transform: translate(75%, -15%);
+  right: calc(var(--layoutPaddingX) * -1);
+  transform: translateY(-40%) rotate(180deg);
 }

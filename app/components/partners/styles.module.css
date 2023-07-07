@@ -36,6 +36,6 @@
 }
 
 .ellipsePartners {
-  left: 0;
-  transform: translate(-75%, -15%);
+  left: calc(var(--layoutPaddingX) * -1);
+  transform: translateY(-50%);
 }

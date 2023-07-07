@@ -4,9 +4,12 @@
 }
 
 .ellipseHero {
-  top: calc(var(--ellipseHeight) / 2 * -1);
+  top: 0;
   left: 50%;
+  width: 100vw;
+  height: auto;
   transform: translateX(-50%);
+  max-width: 90rem; /* 1440px */
 }
 
 .container {
