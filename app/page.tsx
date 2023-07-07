@@ -4,6 +4,7 @@ import Services from "@/components/services";
 import Benefits from "@/components/benefits";
 import Locations from "@/components/locations";
 import Events from "@/components/events";
+import Partners from "@/components/partners";
 import { getClient } from "@/lib/client";
 import {
   FEATURED_EVENTS_QUERY,
@@ -64,17 +65,8 @@ export default async function Home() {
       <Benefits />
       <Locations locations={data.locations} />
       <Events events={data.events} />
-      {/* <div>
-        <h1>Events</h1>
-        <ul>
-          {data.events.map((event: any, index: number) => (
-            <li key={index}>
-              {event.name} - {event.cover.url}
-            </li>
-          ))}
-        </ul>
-      </div>
-
+      <Partners />
+      {/*
       <div>
         <h1>Testimonials</h1>
         <ul>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import DeHouseLogo from "@/utils/dehouse-logo";
+import { DeHouseLogo } from "@/utils/brands";
 import styles from "./styles.module.css";
 import ButtonLink from "@/ui/button-link";
 

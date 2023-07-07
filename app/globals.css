@@ -8,6 +8,7 @@
   /* Colors */
   --white: #ffffff;
   --black: #000000;
+  --grey200: #C7C8D1;
   --grey850: #23232a;
   --purple: #9D5CF4;
 
@@ -24,6 +25,7 @@
   --ellipseWidth: 47.5rem; /* 760px */
   --ellipseHeight: 25rem; /* 400px */
   --ellipseColor: var(--purple);
+  --partnersColor: var(--grey200);
 
   /* Typography */
   --headingFontFamily: "DrukWide-Medium";
