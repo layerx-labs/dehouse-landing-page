@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import Services from "@/components/services";
 import Benefits from "@/components/benefits";
 import Locations from "@/components/locations";
+import Events from "@/components/events";
 import { getClient } from "@/lib/client";
 import {
   FEATURED_EVENTS_QUERY,
@@ -62,6 +63,7 @@ export default async function Home() {
       <Services />
       <Benefits />
       <Locations locations={data.locations} />
+      <Events events={data.events} />
       {/* <div>
         <h1>Events</h1>
         <ul>

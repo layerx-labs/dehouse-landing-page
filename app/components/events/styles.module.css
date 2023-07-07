@@ -1,0 +1,10 @@
+.events {
+  display: flex;
+}
+
+.events > div span {
+  display: inline-block;
+  margin: 0.5625rem 0 2rem; /* 9px 32px */
+  font-size: var(--fontSizeS);
+  opacity: 0.5;
+}
