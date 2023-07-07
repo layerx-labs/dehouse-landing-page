@@ -1,0 +1,92 @@
+.wrapper {
+  padding: calc(var(--sectionPaddingY) / 2) 0; /* 160px 0 */
+  font-size: var(--fontSizeS);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--layoutMaxWidth); /* 100px */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.links ul {
+  margin-bottom: 0.5rem; /* 8px */
+  display: flex;
+}
+
+.links ul li, .links ul li svg {
+  width: auto;
+  height: 1.625rem; /* 26px */
+}
+
+.links ul li:not(:last-child) {
+  margin-right: 2rem; /* 32px */
+}
+
+.links svg {
+  margin-bottom: 5rem; /* 80px */
+  width: 7.8125rem; /* 125px */
+  height: auto;
+  fill: var(--socialIconsColor)
+}
+
+.links ul + a {
+  color: var(--defaultFontColor);
+  font-weight: var(--fontWeightMedium);
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.newsletter {
+  width: 100%;
+  max-width: 25rem; /* 400px */
+}
+
+.newsletter label {
+  font-weight: var(--fontWeightMedium);
+  color: var(--newsletterLabelColor);
+}
+
+.newsletter label + span {
+  display: block;
+  margin: 0.5rem 0 1rem; /* 8px 0 16px */
+  font-size: var(--fontSizeS);
+  opacity: 0.5;
+}
+
+.newsletter .input {
+  margin-bottom: 1rem; /* 16px */
+  height: 3rem; /* 48px */
+  border-radius: 0.25rem; /* 4px */
+  display: flex;
+  overflow: hidden;
+}
+
+.newsletter .input input {
+  flex: 1;
+  border: 0;
+  background-color: var(--newsletterInputColor);
+  padding: 0 1rem; /* 0 16px */
+  outline: 0;
+}
+
+
+.newsletter .input input::placeholder {
+  color: var(--newsletterPlaceholderColor);
+  opacity: 1;
+}
+
+.newsletter .input button {
+  padding: 0 1.5rem; /* 0 24px */
+  background-color: var(--newsletterButtonBackgroundColor);
+  color: var(--newsletterButtonColor);
+  font-size: var(--fontSizeS);
+  font-weight: var(--fontWeightMedium);
+}
+
+.copyright {
+  font-size: var(--fontSizeXs);
+  color: var(--copyrightColor);
+}

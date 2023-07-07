@@ -8,6 +8,7 @@
   /* Colors */
   --white: #ffffff;
   --black: #000000;
+  --grey50: #F1F1F3;
   --grey150: #D5D6DC;
   --grey200: #C7C8D1;
   --grey850: #23232a;
@@ -85,6 +86,15 @@
   --testimonialsMessageColor: var(--grey150);
   --testitmonialsIconColor: var(--purple);
   --testitmonialsAuthorColor: var(--white);
+
+  /* Footer */
+  --socialIconsColor: var(--white);
+  --newsletterLabelColor: var(--grey50);
+  --newsletterPlaceholderColor: #959AA5;
+  --newsletterInputColor: var(--white);
+  --newsletterButtonBackgroundColor: var(--purple);
+  --newsletterButtonColor: var(--white);
+  --copyrightColor: var(--purple);
 }
 
 * {

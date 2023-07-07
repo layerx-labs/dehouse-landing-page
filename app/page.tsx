@@ -6,6 +6,7 @@ import Locations from "@/components/locations";
 import Events from "@/components/events";
 import Partners from "@/components/partners";
 import Testimonials from "@/components/testimonials";
+import Footer from "@/components/footer";
 import { getClient } from "@/lib/client";
 import {
   FEATURED_EVENTS_QUERY,
@@ -76,6 +77,7 @@ export default async function Home() {
       <Events events={data.events} />
       <Partners />
       <Testimonials testimonials={data.testimonials} />
+      <Footer />
     </main>
   );
 }
