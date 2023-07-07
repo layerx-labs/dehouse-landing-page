@@ -61,7 +61,7 @@ model Testimonial {
   name             String    @default("")
   message          String    @default("")
   twitter          String    @default("")
-  linkedin         String    @default("")
+  featured         Boolean   @default(true)
   createdAt        DateTime? @default(now())
 }
 

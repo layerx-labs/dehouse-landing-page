@@ -37,5 +37,5 @@
 
 .ellipsePartners {
   left: 0;
-  transform: translateX(-75%);
+  transform: translate(-75%, -15%);
 }

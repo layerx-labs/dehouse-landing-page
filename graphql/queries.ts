@@ -73,8 +73,11 @@ export const LOCATIONS_QUERY = gql`
 `;
 
 export const TESTIMONIALS_QUERY = gql`
-  query TESTIMONIALS_QUERY {
-    testimonials {
+  query TESTIMONIALS_QUERY(
+    $orderBy: [TestimonialOrderByInput!]!
+    $where: TestimonialWhereInput!
+  ) {
+    testimonials(orderBy: $orderBy, where: $where) {
       id
       avatar {
         url
@@ -82,7 +85,6 @@ export const TESTIMONIALS_QUERY = gql`
       name
       message
       twitter
-      linkedin
     }
   }
 `;

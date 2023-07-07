@@ -1,0 +1,79 @@
+.wrapper {
+  position: relative;
+  padding: var(--sectionPaddingY) 0; /* 160px 0 */
+}
+
+.wrapper > h2, .wrapper > p {
+  text-align: center;
+}
+
+.wrapper h2 + p {
+    margin: 0 auto 4rem; /* 64px */
+    max-width: var(--layoutMaxWidth);
+}
+
+.testimonials {
+  width: 100vw;
+  margin-left: calc(var(--layoutPaddingX) * -1);
+  display: flex;
+  font-size: var(--fontSizeS);
+}
+
+.testimonials > div > div > div {
+  height: 100%;
+}
+
+.panel {
+  flex: 1;
+  margin: 0 1rem; /* 0 16px */
+  width: 21.875rem; /* 350px */
+  height: 100%;
+  border: 0.0625rem solid var(--panelBorderColor); /* 1px */
+  border-radius: var(--panelBorderRadius);
+  background-color: var(--panelBackgroundColor);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem; /* 24px */
+}
+
+.avatar {
+  margin-bottom: 2rem; /* 32px */
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
+  border-radius: 999px;
+  background-color: var(--testimonialsAvatarBackgroundColor);
+  overflow: hidden;
+}
+
+.message {
+  flex: 1;
+  margin-bottom: 2rem; /* 32px */
+}
+
+.message p {
+  color: var(--testimonialsMessageColor);
+  opacity: 1;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author svg {
+  margin-right: 0.5rem; /* 8px */
+  width: 1.25rem; /* 20px */
+  height: 1.25rem; /* 20px */
+  fill: var(--testitmonialsIconColor);
+}
+
+.author,
+.author a {
+  color: var(--testitmonialsAuthorColor);
+  text-decoration: none;
+}
+
+.ellipseTestimonials {
+  right: 0;
+  transform: translate(75%, -15%);
+}

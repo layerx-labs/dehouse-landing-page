@@ -223,7 +223,15 @@ export const lists: Lists = {
       name: text({ validation: { isRequired: true } }),
       message: text({ validation: { isRequired: true } }),
       twitter: text({ validation: { isRequired: false } }),
-      linkedin: text({ validation: { isRequired: false } }),
+      featured: checkbox({
+        defaultValue: true,
+        graphql: {
+          isNonNull: {
+            read: true,
+            create: true,
+          },
+        },
+      }),
       createdAt: timestamp({
         ui: {
           createView: {

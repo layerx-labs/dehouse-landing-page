@@ -5,6 +5,7 @@ import Benefits from "@/components/benefits";
 import Locations from "@/components/locations";
 import Events from "@/components/events";
 import Partners from "@/components/partners";
+import Testimonials from "@/components/testimonials";
 import { getClient } from "@/lib/client";
 import {
   FEATURED_EVENTS_QUERY,
@@ -44,6 +45,14 @@ async function getData() {
 
   const testimonials = await getClient().query({
     query: TESTIMONIALS_QUERY,
+    variables: {
+      where: {
+        featured: {
+          equals: true,
+        },
+      },
+      orderBy: [{ createdAt: "asc" }],
+    },
   });
 
   return {
@@ -66,17 +75,7 @@ export default async function Home() {
       <Locations locations={data.locations} />
       <Events events={data.events} />
       <Partners />
-      {/*
-      <div>
-        <h1>Testimonials</h1>
-        <ul>
-          {data.testimonials.map((testimonial: any, index: number) => (
-            <li key={index}>
-              {testimonial.name} - {testimonial.message}
-            </li>
-          ))}
-        </ul>
-      </div> */}
+      <Testimonials testimonials={data.testimonials} />
     </main>
   );
 }

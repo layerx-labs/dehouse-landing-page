@@ -305,7 +305,7 @@ type Testimonial {
   name: String
   message: String
   twitter: String
-  linkedin: String
+  featured: Boolean!
   createdAt: DateTime
 }
 
@@ -321,7 +321,7 @@ input TestimonialWhereInput {
   name: StringFilter
   message: StringFilter
   twitter: StringFilter
-  linkedin: StringFilter
+  featured: BooleanFilter
   createdAt: DateTimeNullableFilter
 }
 
@@ -330,7 +330,7 @@ input TestimonialOrderByInput {
   name: OrderDirection
   message: OrderDirection
   twitter: OrderDirection
-  linkedin: OrderDirection
+  featured: OrderDirection
   createdAt: OrderDirection
 }
 
@@ -339,7 +339,7 @@ input TestimonialUpdateInput {
   name: String
   message: String
   twitter: String
-  linkedin: String
+  featured: Boolean
   createdAt: DateTime
 }
 
@@ -353,7 +353,7 @@ input TestimonialCreateInput {
   name: String
   message: String
   twitter: String
-  linkedin: String
+  featured: Boolean! = true
   createdAt: DateTime
 }
 
