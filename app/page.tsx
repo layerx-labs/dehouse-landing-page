@@ -1,6 +1,7 @@
 import Nav from "@/components/nav";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
+import Benefits from "@/components/benefits";
 import { getClient } from "@/lib/client";
 import {
   FEATURED_EVENTS_QUERY,
@@ -58,6 +59,7 @@ export default async function Home() {
       <Nav />
       <Hero cities={data.cities} />
       <Services />
+      <Benefits />
       {/* <div>
         <h1>Events</h1>
         <ul>

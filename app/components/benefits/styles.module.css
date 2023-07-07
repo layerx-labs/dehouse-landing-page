@@ -1,0 +1,30 @@
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1.5rem; /* 24px */
+  grid-row-gap: 4rem; /* 64px */
+}
+
+.benefits > div {
+  border: 0.0625rem solid #232428; /* 1px */
+  border-radius: 0.5rem; /* 8px */
+  background-color: #151618;
+  padding: 1.5rem; /* 24px */
+}
+
+.benefits > div div {
+  width: 2rem; /* 32px */
+  height: 2rem; /* 32px */
+  border: 0.0625rem solid transparent; /* 1px */
+  border-radius: 999px;
+  background: var(--benefitsNumberingBackgroundColor) padding-box,
+    var(--benefitsNumberingBorderColor) border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--fontWeightMedium);
+}
+
+.benefits > div h3 {
+  margin: 1rem 0; /* 16px 0 */
+}

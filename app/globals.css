@@ -58,6 +58,18 @@
   /* Nav */
   --navHeight: 3.875rem; /* 62px */
   --navLinkColor: var(--white);
+
+  /* Benefits */
+  --benefitsNumberingBackgroundColor: linear-gradient(
+    180deg,
+    #463069 0%,
+    #231d2f 100%
+  );
+  --benefitsNumberingBorderColor: linear-gradient(
+    180deg,
+    rgba(208, 174, 255, 1) 0%,
+    rgba(86, 20, 174, 1) 100%
+  );
 }
 
 * {

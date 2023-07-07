@@ -54,8 +54,6 @@ export default function Services() {
             <p>{service.description}</p>
           </div>
         ))}
-        <div />
-        <div />
       </div>
     </Section>
   );
