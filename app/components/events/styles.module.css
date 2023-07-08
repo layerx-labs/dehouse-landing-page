@@ -1,5 +1,5 @@
-.events {
-  display: flex;
+.events > div:not(:last-child) {
+  margin: 0 0 1.5rem; /* 24px */
 }
 
 .events > div span {
@@ -7,4 +7,15 @@
   margin: 0.5625rem 0 2rem; /* 9px 32px */
   font-size: var(--fontSizeS);
   opacity: 0.5;
+}
+
+/* S devices */
+@media screen and (min-width: 700px) {
+  .events {
+    display: flex;
+  }
+
+  .events > div:not(:last-child) {
+    margin: 0 2rem 0; /* 32px */
+  }
 }

@@ -23,11 +23,7 @@
 }
 
 .nav ul {
-  position: absolute;
-  display: flex;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  font-size: var(--fontSizeXs);
+  display: none;
 }
 
 .nav ul li a {
@@ -48,4 +44,15 @@
     font-size: var(--fontSizeXs);
     color: var(--availabilityButtonColor);
     box-shadow: var(--buttonInnerShadow);
+}
+
+/* S devices */
+@media screen and (min-width: 840px) {
+  .nav ul {
+    position: absolute;
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: var(--fontSizeXs);
+  }
 }

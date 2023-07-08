@@ -1,8 +1,8 @@
 .services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 6rem; /* 96px */
+  grid-template-columns: 1fr;
   grid-row-gap: 4.5rem; /* 72px */
+  text-align: center;
 }
 
 .services h3 {
@@ -22,4 +22,20 @@
 .ellipseServices {
   left: calc(var(--layoutPaddingX) * -1);
   transform: translateY(-50%);
+}
+
+/* S devices */
+@media screen and (min-width: 700px) {
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem; /* 48px */
+    text-align: left;
+  }
+}
+
+/* M devices */
+@media screen and (min-width: 900px) {
+  .services {
+    grid-column-gap: 6rem; /* 96px */
+  }
 }

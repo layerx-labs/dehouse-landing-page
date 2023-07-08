@@ -17,7 +17,7 @@
   /* Layout */
   --layoutMaxWidth: 1120px;
   --layoutPaddingX: 1rem; /* 16px */
-  --sectionPaddingY: 10rem; /* 160px */
+  --sectionPaddingY: 5rem; /* 80px */
 
   /* Misc */
   --defaultBackgroundColor: var(--black);
@@ -33,7 +33,8 @@
   --fontSizeM: 1rem; /* 16px */
   --fontSizeL: 1.4375rem; /* 23px */
   --fontSizeXl: 2.75rem; /* 44px */
-  --fontSizeXxl: 4.25rem; /* 68px */
+  --fontSizeXxl: 3.125rem; /* 50px */
+
   --fontWeightRegular: 400;
   --fontWeightMedium: 500;
 
@@ -176,6 +177,17 @@ button {
 .ellipse {
   position: absolute;
   z-index: -1;
+}
+
+/* S devices */
+@media screen and (min-width: 700px) {
+  :root {
+    /* Layout */
+    --sectionPaddingY: 10rem; /* 160px */
+
+    /* Typography */
+    --fontSizeXxl: 4.25rem; /* 68px */
+  }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
