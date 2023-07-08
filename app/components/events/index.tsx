@@ -1,5 +1,6 @@
 import Section from "@/ui/section";
 import Panel from "@/ui/panel";
+import ButtonLink from "../ui/button-link";
 import styles from "./styles.module.css";
 import { EventsProps } from "./types";
 
@@ -25,6 +26,7 @@ export default function Events(props: EventsProps) {
           </Panel>
         ))}
       </div>
+      <ButtonLink url="https://lu.ma/dehousetalks" label="View past" external />
     </Section>
   );
 }

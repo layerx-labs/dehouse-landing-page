@@ -9,6 +9,10 @@
   opacity: 0.5;
 }
 
+.events + a {
+  margin: 4rem auto 0; /* 64px */
+}
+
 /* S devices */
 @media screen and (min-width: 700px) {
   .events {
@@ -16,6 +20,6 @@
   }
 
   .events > div:not(:last-child) {
-    margin: 0 2rem 0; /* 32px */
+    margin: 0 2rem 0 0; /* 32px */
   }
 }
