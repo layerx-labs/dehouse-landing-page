@@ -1,3 +1,6 @@
+![DeHouse-Landing--01](https://github.com/ickas/dehouse-landing/assets/2805206/f9536f7f-05d6-47d9-8e7b-a58f878aed91)
+📸 Find more screenshots [here](https://github.com/ickas/dehouse-landing/tree/master/public/screenshots)
+
 ## 📣 Introduction
 
 This project is a proposal to the [_DeHouse Website + CMS_ bounty on Bepro Network](https://app.bepro.network/bepro/polygon/bounty?id=15&repoId=17) website where the goal is to create a dynamic and user-friendly website with a simple content management system (CMS) to manage multiple co-working space locations and community events, and based on a specific [design](https://www.figma.com/file/T0hql5KJwMuuctHK5PGx5K/DeHouse?node-id=15%3A9&t=OFA80fTem3tHibIo-1).
