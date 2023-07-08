@@ -1,8 +1,8 @@
-## Introduction
+## 📣 Introduction
 
 This project is a proposal to the [_DeHouse Website + CMS_ bounty on Bepro Network](https://app.bepro.network/bepro/polygon/bounty?id=15&repoId=17) website where the goal is to create a dynamic and user-friendly website with a simple content management system (CMS) to manage multiple co-working space locations and community events, and based on a specific [design](https://www.figma.com/file/T0hql5KJwMuuctHK5PGx5K/DeHouse?node-id=15%3A9&t=OFA80fTem3tHibIo-1).
 
-## Quick start
+## 🚀 Quick start
 
 First, we need to setup the environment and install the dependencies (like Apollo and Keystone):
 
@@ -35,7 +35,9 @@ Now you can access the app through these links:
 - Keystone CMS: http://localhost:5000
 - Frontend: http://localhost:3000
 
-## App structure
+⚠️ Remember to add some events, locations, and testimonials on CMS first.
+
+## 📂 App structure
 
 ```
 .
@@ -68,7 +70,7 @@ Now you can access the app through these links:
 └── tsconfig.json
 ```
 
-## Styling
+## 💅 Styling
 
 The project is made with CSS Modules and support design tokens through the `app/globals.css` file divided into multiple sections, like:
 
@@ -101,3 +103,14 @@ The project is ready to support multiple themes, like _light_ and _dark_ modes, 
   }
 }
 ```
+
+## 📦 Database
+
+![CleanShot 2023-07-08 at 16 18 48@2x](https://github.com/ickas/dehouse-landing/assets/2805206/53082de2-21f2-4fe6-8f6a-504558bda3be)
+
+The database has three tables:
+
+1. Users → users that have access to the CMS
+2. Events → events that appear on the agenda section (image, ane, date, description, website, and option to show or not on the landing page)
+3. Locations → spaces that appear on the locations section (image, name, address, description, amenities)
+4. Testimonials → messages from clients and partners (avatar, name, message, Twitter, and an option to show or not on the landing page)
