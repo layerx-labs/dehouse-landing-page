@@ -1,4 +1,5 @@
-![DeHouse-Landing--01](https://github.com/ickas/dehouse-landing/assets/2805206/f9536f7f-05d6-47d9-8e7b-a58f878aed91)
+![dehouse-landing](https://github.com/ickas/dehouse-landing/assets/2805206/5211d377-be94-449b-bc57-13cd4a4038ac)
+
 📸 Find more screenshots [here](https://github.com/ickas/dehouse-landing/tree/master/public/screenshots)
 
 ## 📣 Introduction
