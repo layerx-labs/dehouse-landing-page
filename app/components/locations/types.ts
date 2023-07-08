@@ -5,6 +5,7 @@ interface Location {
   city: string;
   description: string;
   cover: Cover;
+  amenities?: string[];
 }
 
 export interface LocationsProps {

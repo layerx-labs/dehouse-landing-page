@@ -33,3 +33,23 @@
 .details {
   flex: 1;
 }
+
+.details > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details > div ul {
+  margin-top: 0.125rem; /* 2px */
+  display: flex;
+}
+
+.details > div ul li:not(:last-child) {
+  margin-right: 0.3125rem; /* 5px */
+}
+
+.details > div ul li svg {
+  width: auto;
+  height: 1.25rem; /* 20px */
+  fill: var(--defaultButtonBorderColor)
+}

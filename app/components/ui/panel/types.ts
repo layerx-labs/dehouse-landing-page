@@ -9,6 +9,7 @@ export interface Cover {
 export interface PanelProps {
   title: string;
   cover: Cover;
+  icons?: string[];
   children: React.ReactNode;
   buttonUrl: string;
   buttonLabel: string;
