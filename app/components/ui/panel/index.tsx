@@ -16,7 +16,12 @@ export default function Panel(props: PanelProps) {
         <h3>{title}</h3>
         {children}
       </div>
-      <ButtonLink url={buttonUrl} label={buttonLabel} icon="arrowRight" />
+      <ButtonLink
+        url={buttonUrl}
+        label={buttonLabel}
+        icon="arrowRight"
+        external
+      />
     </div>
   );
 }

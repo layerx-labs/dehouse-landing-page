@@ -2,10 +2,10 @@ import styles from "./styles.module.css";
 import { SectionProps } from "./types";
 
 export default function Section(props: SectionProps) {
-  const { title, subtitle, children } = props;
+  const { id, title, subtitle, children } = props;
 
   return (
-    <div className={styles.wrapper}>
+    <div id={id} className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.heading}>
           <h2>{title}</h2>

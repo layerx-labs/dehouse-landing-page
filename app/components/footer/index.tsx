@@ -13,15 +13,25 @@ export default function Footer() {
     <footer className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.links}>
-          <DeHouseLogo />
+          <Link className={styles.logo} href=".">
+            <DeHouseLogo />
+          </Link>
           <ul>
             <li>
-              <Link href="#0" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://twitter.com/DeHouseDAO"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon icon="twitter" />
               </Link>
             </li>
             <li>
-              <Link href="#0" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://www.instagram.com/dehouse.dao"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon icon="instagram" />
               </Link>
             </li>

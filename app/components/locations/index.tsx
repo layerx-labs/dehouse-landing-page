@@ -9,7 +9,7 @@ export default function Locations(props: LocationsProps) {
   const { locations } = props;
 
   return (
-    <Section title="Locations">
+    <Section id="locations" title="Locations">
       <Image
         className={`ellipse ${styles.ellipseLocations}`}
         src={Ellipse}
@@ -23,7 +23,10 @@ export default function Locations(props: LocationsProps) {
             key={index}
             title={location.name}
             cover={location.cover}
-            buttonUrl={"#0"}
+            buttonUrl={
+              process.env.AVAILABILITY_FORM_URL ??
+              "https://docs.google.com/forms/d/e/1FAIpQLSdWHT8HksOtO54IHY8k29c9Jltnafdc0PhHtxkG8XDyzMicJg/viewform"
+            }
             buttonLabel="Check availability"
           >
             <span>{location.city}</span>

@@ -12,6 +12,19 @@
   text-align: center;
 }
 
+.logo {
+  margin: 0 auto 2rem; /* 32px */
+  width: 7.8125rem; /* 125px */
+  height: auto;
+  display: flex;
+}
+
+.logo svg {
+  width: 7.8125rem; /* 125px */
+  height: auto;
+  fill: var(--socialIconsColor);
+}
+
 .links,
 .newsletter {
   width: 100%;
@@ -34,9 +47,6 @@
 }
 
 .links svg {
-  margin-bottom: 2rem; /* 32px */
-  width: 7.8125rem; /* 125px */
-  height: auto;
   fill: var(--socialIconsColor);
 }
 
@@ -108,13 +118,13 @@
     text-align: left;
   }
 
+  .logo {
+    margin: 0 0 5rem; /* 80px */
+  }
+
   .links ul {
     margin-bottom: 0.5rem; /* 8px */
     justify-content: flex-start;
-  }
-
-  .links svg {
-    margin-bottom: 5rem; /* 80px */
   }
 
   .newsletter {

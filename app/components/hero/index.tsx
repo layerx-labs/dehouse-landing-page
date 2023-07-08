@@ -30,7 +30,11 @@ export default function Hero(props: any) {
           </p>
           <div className={styles.buttons}>
             {cities.map((location: { city: string }) => (
-              <ButtonLink url="#0" label={location.city} icon="arrowRight" />
+              <ButtonLink
+                url="#locations"
+                label={location.city}
+                icon="arrowRight"
+              />
             ))}
           </div>
         </div>

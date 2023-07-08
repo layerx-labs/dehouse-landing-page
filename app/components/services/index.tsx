@@ -46,7 +46,7 @@ export default function Services() {
   ];
 
   return (
-    <Section title="Services">
+    <Section id="services" title="Services">
       <Image
         className={`ellipse ${styles.ellipseServices}`}
         src={Ellipse}
