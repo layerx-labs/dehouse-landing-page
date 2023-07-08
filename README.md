@@ -38,7 +38,7 @@ Now you can access the app through these links:
 - Keystone CMS: http://localhost:5000
 - Frontend: http://localhost:3000
 
-⚠️ Remember to add some events, locations, and testimonials on CMS first.
+⚠️ Remember to add some events, locations, and testimonials on CMS first. Or you can use this [database dump](https://github.com/ickas/dehouse-landing/blob/master/graphql/dump-henrique-202307081719) that already contains some real and dummy data.
 
 ## 📂 App structure
 
