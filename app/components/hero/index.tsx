@@ -29,8 +29,9 @@ export default function Hero(props: any) {
             grow.
           </p>
           <div className={styles.buttons}>
-            {cities.map((location: { city: string }) => (
+            {cities.map((location: { city: string }, index: number) => (
               <ButtonLink
+                key={index}
                 url="#locations"
                 label={location.city}
                 icon="arrowRight"
