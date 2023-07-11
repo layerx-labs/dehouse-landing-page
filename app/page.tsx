@@ -1,3 +1,4 @@
+import { headers } from "next/headers";
 import Nav from "@/components/nav";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
@@ -66,6 +67,8 @@ async function getData() {
 
 export default async function Home() {
   const data = await getData();
+  const headersList = headers();
+  const referer = headersList.get("referer");
 
   return (
     <main>
