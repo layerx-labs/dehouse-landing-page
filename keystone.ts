@@ -15,9 +15,8 @@ import { lists } from './schema'
 import 'dotenv/config'
 
 const {
-  ASSET_BASE_URL: baseUrl = 'http://localhost:3000',
-  DATABASE_URL:
-    databaseUrl = 'postgresql://henrique@localhost:5433/henrique?schema=dehouse-cms',
+  ASSET_BASE_URL: baseUrl = 'http://localhost:40000',
+  DATABASE_URL: databaseUrl = '',
   KEYSTONE_PORT: serverPort = '40000'
 } = process.env
 
