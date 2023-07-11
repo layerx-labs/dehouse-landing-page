@@ -28,16 +28,18 @@ export default function Hero(props: any) {
             We are the perfect place to inspire your work, build your voice and
             grow.
           </p>
-          <div className={styles.buttons}>
-            {cities.map((location: { city: string }, index: number) => (
-              <ButtonLink
-                key={index}
-                url="#locations"
-                label={location.city}
-                icon="arrowRight"
-              />
-            ))}
-          </div>
+          {cities && (
+            <div className={styles.buttons}>
+              {cities.map((location: { city: string }, index: number) => (
+                <ButtonLink
+                  key={index}
+                  url="#locations"
+                  label={location.city}
+                  icon="arrowRight"
+                />
+              ))}
+            </div>
+          )}
         </div>
         <div className={styles.images}>
           <div>

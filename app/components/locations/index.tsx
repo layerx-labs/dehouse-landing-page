@@ -9,6 +9,8 @@ import Icon from "../ui/icons";
 export default function Locations(props: LocationsProps) {
   const { locations } = props;
 
+  if (!locations) return <></>;
+
   return (
     <Section id="locations" title="Locations">
       <Image

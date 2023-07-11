@@ -9,6 +9,8 @@ import Link from "next/link";
 export default function Testimonials(props: TestimonialsProps) {
   const { testimonials } = props;
 
+  if (!testimonials) return <></>;
+
   return (
     <div className={styles.wrapper}>
       <h2>Testimonials</h2>

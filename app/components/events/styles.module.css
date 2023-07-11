@@ -9,7 +9,7 @@
   opacity: 0.5;
 }
 
-.events + a {
+.container > a {
   margin: 4rem auto 0; /* 64px */
 }
 
