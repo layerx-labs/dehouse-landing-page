@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "dehouse.org",
       },
+      {
+        protocol: "https",
+        hostname: "api.dehouse.org",
+      },
     ],
   },
 };
