@@ -6,23 +6,29 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "keystone:dev": "PORT=40000 keystone dev",
+    "keystone:start": "PORT=40000 keystone start",
+    "keystone:build": "PORT=40000 keystone build",
+    "keystone:postinstall": "keystone build --no-ui --frozen"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.0-beta.3",
+    "@apollo/experimental-nextjs-app-support": "^0.2.1",
+    "@keystone-6/auth": "^7.0.0",
+    "@keystone-6/core": "^5.0.0",
+    "@keystone-6/fields-document": "^8.0.0",
+    "@t3-oss/env-nextjs": "^0.6.0",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "eslint": "8.28.0",
-    "eslint-config-next": "13.0.4",
-    "next": "13.0.4",
+    "eslint-config-next": "^13.4.8",
+    "next": "^13.4.8",
     "polished": "^4.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-intersection-observer": "^9.4.1",
-    "styled-components": "^5.3.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.0",
     "typescript": "4.9.3"
-  },
-  "devDependencies": {
-    "@types/styled-components": "^5.1.26"
   }
 }

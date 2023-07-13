@@ -1,0 +1,21 @@
+.wrapper {
+  position: relative;
+  padding: var(--sectionPaddingY) 0; /* 160px 0 */
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--layoutMaxWidth); /* 100px */
+}
+
+.heading {
+  margin-bottom: 4rem; /* 64px */
+}
+
+.heading h2, .heading p {
+text-align: center;
+}
+
+.heading p {
+  margin-top: 1.5rem; /* 24px */
+}

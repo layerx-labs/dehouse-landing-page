@@ -1,12 +1,98 @@
 @font-face {
-  font-family: 'Space Grotesk';
-  src: url('/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-family: "DrukWide-Medium";
+  src: url("/fonts/Druk_Wide_Family/DrukWide-Medium.otf") format("opentype");
   font-display: swap;
 }
 
 :root {
-  --background-color: #000000;
-  --text-primary: #ffffff;
+  /* Colors */
+  --white: #ffffff;
+  --black: #000000;
+  --grey50: #f1f1f3;
+  --grey150: #d5d6dc;
+  --grey200: #c7c8d1;
+  --grey850: #23232a;
+  --purple: #9d5cf4;
+
+  /* Layout */
+  --layoutMaxWidth: 1120px;
+  --layoutPaddingX: 1rem; /* 16px */
+  --sectionPaddingY: 5rem; /* 80px */
+
+  /* Misc */
+  --defaultBackgroundColor: var(--black);
+  --defaultFontColor: var(--white);
+  --defaultTransitionDuration: 0.3s;
+  --logoColor: var(--white);
+  --partnersColor: var(--grey200);
+
+  /* Typography */
+  --headingFontFamily: "DrukWide-Medium";
+  --fontSizeXs: 0.75rem; /* 12px */
+  --fontSizeS: 0.875rem; /* 14px */
+  --fontSizeM: 1rem; /* 16px */
+  --fontSizeL: 1.4375rem; /* 23px */
+  --fontSizeXl: 2.75rem; /* 44px */
+  --fontSizeXxl: 3.125rem; /* 50px */
+
+  --fontWeightRegular: 400;
+  --fontWeightMedium: 500;
+
+  /* Buttons */
+  --defaultButtonBorderColor: #36393f;
+  --defaultButtonBorderRadius: 0.5rem; /* 8px */
+  --defaultButtonBackgroundColor: #232428;
+  --defaultButtonHeight: 2rem; /* 32px */
+  --defaultButtonPaddingX: 1rem; /* 16px */
+  --defaultButtonColor: var(--white);
+  --buttonInnerShadow: inset 0rem -0.1875rem 0.0625rem 0rem rgba(0, 0, 0, 0.13),
+    inset 0rem 0.125rem 0.0625rem 0rem rgba(255, 255, 255, 0.23);
+  --availabilityButtonBorderColor: #65882b;
+  --availabilityButtonBackgroundColor: #bbfc4f;
+  --availabilityButtonColor: var(--grey850);
+  --heroButtonBorderColor: var(--purple);
+  --heroButtonBackground: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.04) 100%
+    ),
+    linear-gradient(to left, #120d1a, #120d1a);
+
+  /* Nav */
+  --navHeight: 3.875rem; /* 62px */
+  --navLinkColor: var(--white);
+
+  /* Panels */
+  --panelBackgroundColor: #151618;
+  --panelBorderColor: #232428;
+  --panelBorderRadius: 1rem; /* 16px */
+
+  /* Benefits */
+  --benefitsNumberingBackgroundColor: linear-gradient(
+    180deg,
+    #463069 0%,
+    #231d2f 100%
+  );
+  --benefitsNumberingBorderColor: linear-gradient(
+    180deg,
+    rgba(208, 174, 255, 1) 0%,
+    rgba(86, 20, 174, 1) 100%
+  );
+
+  /* Testimonials */
+  --testimonialsAvatarBackgroundColor: var(--purple);
+  --testimonialsMessageColor: var(--grey150);
+  --testitmonialsIconColor: var(--purple);
+  --testitmonialsAuthorColor: var(--white);
+
+  /* Footer */
+  --socialIconsColor: var(--white);
+  --newsletterLabelColor: var(--grey50);
+  --newsletterPlaceholderColor: #959aa5;
+  --newsletterInputColor: var(--white);
+  --newsletterButtonBackgroundColor: var(--purple);
+  --newsletterButtonColor: var(--white);
+  --copyrightColor: var(--purple);
 }
 
 * {
@@ -18,47 +104,48 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   width: 100vw;
-  background-color: var(--background-color);
-  font-family: "Space Grotesk", Verdana, Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-feature-settings: 'ss04' on;
-  color: var(--text-primary);
+  background-color: var(--defaultBackgroundColor);
+  font-size: var(--fontSizeM);
+  font-weight: var(--fontWeightRegular);
+  color: var(--defaultFontColor);
   overflow-x: hidden;
-  transition-duration: 0.3s;
 }
 
-h1, h2, h3 {
+main {
+  padding: 0 var(--layoutPaddingX);
+}
+
+h1,
+h2 {
   margin: 0;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-family: var(--headingFontFamily);
+  font-weight: var(--fontWeightMedium);
 }
 
-h1, h2 {
-  font-size: 2.25rem; /* 36px */
-  line-height: 1.2;
-  letter-spacing: 0.4rem; /* 6.4px */
+h1 {
+  font-size: var(--fontSizeXxl);
+}
+
+h2 {
+  font-size: var(--fontSizeXl);
 }
 
 h3 {
-  font-size: 1.875rem; /* 30px */
-  letter-spacing: 0.125rem; /* 2px */
-}
-
-h4 {
-  font-size: 1.25rem; /* 20px */
-  font-weight: 400;
-  letter-spacing: 0.125rem; /* 2px */
+  margin: 0;
+  font-size: var(--fontSizeL);
+  font-weight: var(--fontWeightRegular);
 }
 
 p {
   margin: 0;
   line-height: 1.5;
+  opacity: 50%;
 }
 
 ul {
@@ -72,7 +159,7 @@ button {
   background-color: transparent;
   padding: 0;
   white-space: nowrap;
-  transition-duration: 0.3s;
+  transition-duration: var(--defaultTransitionDuration);
   cursor: pointer;
 }
 
@@ -88,11 +175,19 @@ button {
   clip: rect(0 0 0 0);
 }
 
-@media (min-width: 700px) {
-  h1, h2 {
-    font-size: 2.875rem; /* 46px */
-    line-height: 1.2;
-    letter-spacing: 0.4rem; /* 6.4px */
+.ellipse {
+  position: absolute;
+  z-index: -1;
+}
+
+/* S devices */
+@media screen and (min-width: 700px) {
+  :root {
+    /* Layout */
+    --sectionPaddingY: 10rem; /* 160px */
+
+    /* Typography */
+    --fontSizeXxl: 4.25rem; /* 68px */
   }
 }
 

@@ -1,0 +1,62 @@
+.nav {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 3.875rem; /* 62px */
+  padding: 0 var(--layoutPaddingX);
+  z-index: 2;
+}
+
+.nav > div {
+  position: relative;
+  margin: 0 auto;
+  max-width: var(--layoutMaxWidth);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.nav svg {
+  width: auto;
+  height: 1rem; /* 16px */
+}
+
+.nav ul {
+  display: none;
+}
+
+.nav ul li a {
+  padding: 0.5rem; /* 8px */
+  color: var(--navLinkColor);
+  text-decoration: none;
+}
+
+.nav ul li:not(:last-child) {
+  margin-right: 5.5rem; /* 88px */
+}
+
+.nav ul + a {
+  height: 1.875rem; /* 30px */
+    border-color: var(--availabilityButtonBorderColor);
+    background: var(--availabilityButtonBackgroundColor);
+    padding: 0 0.75rem; /* 0 12px */
+    font-size: var(--fontSizeXs);
+    color: var(--availabilityButtonColor);
+    box-shadow: var(--buttonInnerShadow);
+}
+
+/* S devices */
+@media screen and (min-width: 840px) {
+  .nav ul {
+    position: absolute;
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: var(--fontSizeXs);
+  }
+}
