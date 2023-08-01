@@ -8,10 +8,6 @@
   padding: 1rem; /* 16px */
 }
 
-.panel:not(:last-child) {
-  margin-right: 2rem; /* 32px */
-}
-
 .cover {
   position: relative;
   margin-bottom: 1rem; /* 16px */

@@ -1,5 +1,7 @@
-.locations > div:not(:last-child) {
-  margin: 0 0 1.5rem; /* 24px */
+.locations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem; /* 24px */
 }
 
 .locations > div span {
@@ -15,22 +17,4 @@
 .ellipseLocations {
   right: calc(var(--layoutPaddingX) * -1);
   transform: translateY(-50%) rotate(180deg);
-}
-
-/* S devices */
-@media screen and (min-width: 700px) {
-  .locations {
-    display: flex;
-  }
-
-  .locations > div:not(:last-child) {
-    margin: 0 1.5rem 0; /* 24px */
-  }
-}
-
-/* L devices */
-@media screen and (min-width: 1280px) {
-  .locations > div:not(:last-child) {
-    margin: 0 4.25rem 0; /* 68px */
-  }
 }
