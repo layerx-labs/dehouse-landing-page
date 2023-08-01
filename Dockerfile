@@ -2,6 +2,7 @@ FROM node:18.16.0-alpine3.18 AS builder
 WORKDIR /app
 RUN apk update
 COPY package.json ./
+COPY package-lock.json ./
 RUN npm  install --no-audit
 COPY .env .env
 COPY . .
