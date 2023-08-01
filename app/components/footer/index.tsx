@@ -36,7 +36,7 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-          <Link href="mailto:gm@dehouse.org">gm@dehouse.org</Link>
+          <Link href="mailto:hello@dehouse.org">hello@dehouse.org</Link>
         </div>
         <div className={styles.newsletter}>
           <label>Newsletter</label>
@@ -59,7 +59,7 @@ export default function Footer() {
             </button>
           </div>
           <span className={styles.copyright}>
-            © Work-in Porto, {new Date().getFullYear()}
+            © DeHouse, {new Date().getFullYear()}
           </span>
         </div>
       </div>
