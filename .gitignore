@@ -19,6 +19,7 @@
 .DS_Store
 *.pem
 .keystone
+public/images/*
 
 # debug
 npm-debug.log*
