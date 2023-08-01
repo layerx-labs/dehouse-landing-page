@@ -36,7 +36,7 @@ export default function Services() {
     {
       icon: <Access />,
       title: "Global Access",
-      description: "Access to all Workin-in and DeHouse common areas.",
+      description: "Access to all DeHouse common areas.",
     },
     {
       icon: <Expenses />,
