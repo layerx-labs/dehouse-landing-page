@@ -19,14 +19,15 @@ export default function Hero(props: any) {
       />
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1>The first web3 Hub in Portugal.</h1>
+          <h1>Decentralized Workspace for the Next Tech Frontier</h1>
           <p>
             We are a space where ideas manifest, grow and build. We act as an
             accelerator of creative potential and new ideas.
           </p>
           <p>
-            We are the perfect place to inspire your work, build your voice and
-            grow.
+          Get to know more about our universe, join our talks and workshops, participate in our 
+          wellness activities and discover the best work life balance. Our promise is to inspire 
+          DeHouse members and partners, as well as the local communities.
           </p>
           {cities && (
             <div className={styles.buttons}>

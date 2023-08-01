@@ -15,8 +15,7 @@ export default function Testimonials(props: TestimonialsProps) {
     <div className={styles.wrapper}>
       <h2>Testimonials</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua
+        Get to Know what our community thinks about us!
       </p>
       <Image
         className={`ellipse ${styles.ellipseTestimonials}`}
