@@ -18,11 +18,12 @@ import {
 } from "@/graphql/queries";
 
 const title = "DeHouse - Decentralized Coworking Spaces";
-const description = "Embrace the future of work with our decentralized co-working spaces, exclusively designed for tech companies in Porto and Braga";
+const description = "Embrace the future of work with our decentralized coworking spaces, exclusively designed for tech companies in Porto and Braga";
 
 export const metadata: Metadata = {
   title,
   description,
+  keywords: "Coworking Space, dehouse, Coworking Porto, Share Office, Meeting Rooms, Tech Meetups, Workshops, Virtual Office, Networking",
   openGraph: {
     title,
     type: 'website',
