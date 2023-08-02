@@ -19,11 +19,11 @@ export default function Footer() {
           <ul>
             <li>
               <Link
-                href="https://twitter.com/DeHouseDAO"
+                href="https://x.com/DeHouseDAO"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Icon icon="twitter" />
+                <Icon icon="x" />
               </Link>
             </li>
             <li>
