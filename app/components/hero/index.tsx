@@ -25,7 +25,7 @@ export default function Hero(props: any) {
             accelerator of creative potential and new ideas.
           </p>
           <p>
-          Our network of <strong>Coworking Spaces</strong> is more than just a place to work – it's a hub for sharing knowledge, cultivating connections, and nurturing your wellbeing. <br/><br/>
+          Our network of <strong>Coworking Spaces</strong> is more than just a place to work – it&apos;s a hub for sharing knowledge, cultivating connections, and nurturing your wellbeing. <br/><br/>
           From workshops and seminars to networking events and wellness activities, we empower our members to grow both personally and professionally. <br/><br/>
           Join us and be part of a dynamic community that values your success as much as your happiness! 
           </p>
