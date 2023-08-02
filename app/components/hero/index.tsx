@@ -19,7 +19,7 @@ export default function Hero(props: any) {
       />
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1>Decentralized Workspace for the Next Tech Frontier</h1>
+          <h1>Workspaces for the Next Tech Frontier</h1>
           <p>
             We are a space where ideas manifest, grow and build. We act as an
             accelerator of creative potential and new ideas.
