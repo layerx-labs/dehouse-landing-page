@@ -1,8 +1,8 @@
 import Image from "next/image";
 import ButtonLink from "../ui/button-link";
 import styles from "./styles.module.css";
-import Image01 from "../../../public/hero-01.jpg";
-import Image02 from "../../../public/hero-02.jpg";
+import Image01 from "../../../public/dehouse-braga-2.jpg";
+import Image02 from "../../../public/dehouse-porto-1.jpg";
 import Ellipse from "../../../public/ellipse-01.png";
 
 export default function Hero(props: any) {
