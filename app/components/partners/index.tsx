@@ -3,13 +3,15 @@ import Marquee from "react-fast-marquee";
 import styles from "./styles.module.css";
 import {
   LayerX,
-  Bepro,
   Subvisual,
-  ETHFoundation,
-  Aurora,
   Utrust,
-  Polkamarkets,
-  BrightPixel,
+  Caos,
+  Chainlink,
+  Exclusible,
+  Lympid,
+  RealFevr,
+  WebSummit,
+  Workin,
 } from "@/utils/brands";
 import Ellipse from "../../../public/ellipse-02.png";
 
@@ -21,32 +23,40 @@ export default function Partners() {
       name: "LayerX",
     },
     {
-      logo: <Bepro fill={logoFill} />,
-      name: "Bepro Network",
-    },
-    {
       logo: <Subvisual fill={logoFill} />,
       name: "Subvisual",
-    },
-    {
-      logo: <ETHFoundation fill={logoFill} />,
-      name: "ETH Foundation",
-    },
-    {
-      logo: <Aurora fill={logoFill} />,
-      name: "Aurora",
     },
     {
       logo: <Utrust fill={logoFill} />,
       name: "Utrust",
     },
     {
-      logo: <Polkamarkets fill={logoFill} />,
-      name: "Polkamarkets",
+      logo: <WebSummit fill={logoFill} />,
+      name: "Web Summit",
     },
     {
-      logo: <BrightPixel fill={logoFill} />,
-      name: "Bright Pixel",
+      logo: <Exclusible fill={logoFill} />,
+      name: "Exclusible",
+    },
+    {
+      logo: <Chainlink fill={logoFill} />,
+      name: "Chainlink",
+    },
+    {
+      logo: <Lympid fill={logoFill} />,
+      name: "Lympid",
+    },
+    {
+      logo: <RealFevr fill={logoFill} />,
+      name: "RealFevr",
+    },
+    {
+      logo: <Caos fill={logoFill} />,
+      name: "CAOS",
+    },
+    {
+      logo: <Workin fill={logoFill} />,
+      name: "Workin",
     },
   ];
 
