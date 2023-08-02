@@ -29,6 +29,7 @@
 }
 
 .content h1 {
+  font-size: 2.5rem; /* 40px */
   margin-bottom: 1rem; /* 16px */
 }
 
@@ -114,5 +115,9 @@
 @media screen and (min-width: 1280px) {
   .container {
     grid-gap: 8.125rem; /* 130px */
+  }
+
+  .content h1 {
+    font-size: var(--fontSizeXxl);
   }
 }

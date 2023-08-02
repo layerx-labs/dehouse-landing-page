@@ -19,15 +19,22 @@ export default function Hero(props: any) {
       />
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1>Workspaces for the Next Tech Frontier</h1>
+          <h1>Workspaces for the next tech frontier</h1>
           <p>
             We are a space where ideas manifest, grow and build. We act as an
             accelerator of creative potential and new ideas.
           </p>
           <p>
-          Our network of <strong>Coworking Spaces</strong> is more than just a place to work – it&apos;s a hub for sharing knowledge, cultivating connections, and nurturing your wellbeing. <br/><br/>
-          From workshops and seminars to networking events and wellness activities, we empower our members to grow both personally and professionally. <br/><br/>
-          Join us and be part of a dynamic community that values your success as much as your happiness! 
+            Our network of <strong>Coworking Spaces</strong> is more than just a
+            place to work – it&apos;s a hub for sharing knowledge, cultivating
+            connections, and nurturing your wellbeing. <br />
+            <br />
+            From workshops and seminars to networking events and wellness
+            activities, we empower our members to grow both personally and
+            professionally. <br />
+            <br />
+            Join us and be part of a dynamic community that values your success
+            as much as your happiness!
           </p>
           {cities && (
             <div className={styles.buttons}>
