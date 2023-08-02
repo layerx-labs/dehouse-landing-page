@@ -74,12 +74,12 @@
 .images img:first-child {
   position: absolute;
   left: 0;
-  width: 65%;
+  width: 75%;
 }
 
 .images img:last-child {
   margin-top: 5.625rem; /* 90px */
-  width: 90%;
+  width: 80%;
 }
 
 /* S devices */
