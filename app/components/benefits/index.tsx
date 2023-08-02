@@ -6,7 +6,7 @@ export default function Benefits() {
     {
       title: "Talks",
       description:
-        "Workshops and discussions inspire Work-In members and partners to grow.",
+        "Discussion Panels, Workshops, Meetups inspire DeHouse members and partners to grow, learn and evolve their ideas",
     },
     {
       title: "Wellness",
@@ -16,12 +16,12 @@ export default function Benefits() {
     {
       title: "Social",
       description:
-        "It’s important to balance work and personal life. Work-In offers leisure opportunities to all members - concerts, drinks, workshops, and more.",
+        "It’s important to balance work and personal life. DeHouse offers leisure opportunities to all members - concerts, drinks, workshops, and more.",
     },
     {
       title: "Parking",
       description:
-        "Parking open 24/7, secure, and a three-minute walk from the office, available for DeHouse members at a discount.",
+        "Parking open 24/7, secure, available for DeHouse members at a discount.",
     },
   ];
 
