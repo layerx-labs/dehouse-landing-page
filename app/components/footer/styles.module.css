@@ -86,6 +86,7 @@
 .newsletter .input input {
   flex: 1;
   border: 0;
+  border-radius: 0;
   background-color: var(--newsletterInputColor);
   padding: 0 1rem; /* 0 16px */
   outline: 0;
