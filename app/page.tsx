@@ -107,9 +107,6 @@ async function getData() {
 }
 
 
-
-
-
 export default async function Home() {
   const headersList = headers();
   const data = await getData();
