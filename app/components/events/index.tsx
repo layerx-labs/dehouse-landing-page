@@ -11,7 +11,7 @@ export default function Events(props: EventsProps) {
     <Section
       id="agenda"
       title="Agenda"
-      subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+      subtitle="Explore our dynamic agenda packed with workshops, networking, and inspiring community events."
     >
       <div className={styles.container}>
         {events && (

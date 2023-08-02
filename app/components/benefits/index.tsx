@@ -21,7 +21,7 @@ export default function Benefits() {
     {
       title: "Parking",
       description:
-        "Parking open 24/7, secure, and a three-minute walk from the office, available for DeHouse members at 25€/month.",
+        "Parking open 24/7, secure, and a three-minute walk from the office, available for DeHouse members at a discount.",
     },
   ];
 
